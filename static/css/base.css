@@ -3,6 +3,8 @@ body {
     color: #303030;
     padding: 0;
     margin: 0;
+    font-family: 'Vollkorn', serif;
+    font-size: 14pt;
 }
 
 #header h1 {
@@ -25,7 +27,6 @@ ul.menu-items {
 
 ul.menu-items li {
     display: inline;
-    font-family: 'Vollkorn', serif;
     font-size: 32px;
     margin: 0 20 0 0px;
 }
