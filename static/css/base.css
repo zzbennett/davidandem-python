@@ -17,6 +17,28 @@ body {
     height: 80px;
 }
 
+ul.menu-items {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 17 0 0 0px;
+}
+
+ul.menu-items li {
+    display: inline;
+    font-family: 'Vollkorn', serif;
+    font-size: 32px;
+    margin: 0 20 0 0px;
+}
+
+ul.menu-items li a {
+    color: #FFF666;
+    text-decoration: none;
+}
+
+ul.menu-items li a:hover {
+    color: #FFF666;
+    text-decoration: underline;
+}
 
 /* structure */
 #left-side {
@@ -24,18 +46,21 @@ body {
     overflow: hidden;
     width: 528px;
     height: 100%;
-    float: left;
+}
+
+#right-side {
+    position: absolute;
+    left: 528px;
+    top: 0px;
+    right: 0px;
 }
 
 #header {
-    position: relative;
-    left: 20px;
+    margin-left: 20px;
 }
 
 #content {
-    position: relative;
-    left: 20px;
-    top: 20px;
+    margin: 20 0 0 20px;
 }
 
 img.kissing-image {
