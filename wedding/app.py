@@ -1,6 +1,9 @@
 import os
 
-from bottle import TEMPLATE_PATH, template, route, run, static_file
+from bottle import (
+    TEMPLATE_PATH, route, run, static_file,
+    jinja2_template as template
+)
 from pymongo import MongoClient
 
 
@@ -32,8 +35,8 @@ def upload_photo():
 
 
 @route('/')
-def hello():
-    return "Hello World!"
+def main_page():
+    return template('base.tpl')
 
 
 def main():
