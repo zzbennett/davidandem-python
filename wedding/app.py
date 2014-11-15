@@ -11,10 +11,8 @@ from_here = lambda s: os.path.join(
 # Add template directory to where Bottle looks for templates.
 TEMPLATE_PATH.append(from_here('templates'))
 
-MONGO_HOST = os.environ.get('MONGO_HOST', 'localhost')
-MONGO_PORT = int(os.environ.get('MONGO_PORT', 27017))
-
-db = MongoClient(MONGO_HOST, MONGO_PORT).wedding
+MONGO_URL = os.environ.get('MONGOHQ_URL', "mongodb://localhost:27017")
+db = MongoClient(MONGO_URL).wedding
 
 
 @route('/static/<filename:path>')
