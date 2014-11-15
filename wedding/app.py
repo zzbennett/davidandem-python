@@ -34,6 +34,11 @@ def upload_photo():
     pass
 
 
+@route('/travel-info')
+def travel_info():
+    return template('travel-info.tpl')
+
+
 @route('/')
 def main_page():
     return template('base.tpl')
