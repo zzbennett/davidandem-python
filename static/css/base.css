@@ -1,0 +1,43 @@
+/* style */
+body {
+    color: #303030;
+    padding: 0;
+    margin: 0;
+}
+
+#header h1 {
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Tangerine', cursive;
+    font-size: 52pt;
+}
+
+#menu-bar {
+    background-color: #303030;
+    height: 80px;
+}
+
+
+/* structure */
+#left-side {
+    background-color: #303030;
+    overflow: hidden;
+    width: 528px;
+    height: 100%;
+    float: left;
+}
+
+#header {
+    position: relative;
+    left: 20px;
+}
+
+#content {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+img.kissing-image {
+    margin: 20px;
+}
