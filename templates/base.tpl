@@ -41,7 +41,7 @@
         <div id="menu-bar">
           <ul class="menu-items">
             <li><a href="/">Home</a></li>
-            <li><a href="#">Photos</a></li>
+            <li><a href="/photos">Photos</a></li>
             <li><a href="#">Registry</a></li>
             <li><a href="/travel-info">Travel Information</a></li>
             <li><a href="#">Schedule</a></li>
