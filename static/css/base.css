@@ -16,13 +16,12 @@ body {
 
 #menu-bar {
     background-color: #303030;
-    height: 80px;
+    padding: 10px;
 }
 
 ul.menu-items {
     list-style-type: none;
-    margin: 0 0 0 20px;
-    padding: 17 0 0 0px;
+    margin: 0 0 0 0px;
 }
 
 ul.menu-items li {
@@ -42,6 +41,11 @@ ul.menu-items li a:hover {
 }
 
 /* structure */
+
+#wrap {
+    background-color: #ffffee;
+}
+
 #left-side {
     background-color: #303030;
     overflow: hidden;
