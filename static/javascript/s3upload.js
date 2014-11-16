@@ -23,7 +23,12 @@
     function S3Upload(options) {
       if (options == null) options = {};
       for (option in options) {
-        this[option] = options[option];
+	// look for s3_object_name
+	if (option === 's3_object_name') {
+	  this.s3_object_name = options[option];
+	} else {
+          this[option] = options[option];
+	}
       }
       this.handleFileSelect(document.getElementById(this.file_dom_selector));
     }

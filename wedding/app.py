@@ -1,3 +1,4 @@
+import datetime
 import os
 import time
 import base64
@@ -35,10 +36,12 @@ def static(filename):
 def test_images():
     return template('base.tpl')
 
-# display photos that have been uploaded
+
 @route('/photos')
 def photos():
-    return template('photos.tpl')
+    all_photos = db.photos.find()
+    return template('photos.tpl', photos=list(all_photos))
+
 
 @route('/travel-info')
 def travel_info():
@@ -48,6 +51,7 @@ def travel_info():
 @route('/')
 def main_page():
     return template('base.tpl')
+
 
 @route('/sign_s3')
 def sign_s3():
@@ -73,15 +77,25 @@ def sign_s3():
         'url': url
     })
 
-@route('/submit_photo', method='POST')
+
+@route('/photos/upload', method='POST')
 def submit_photo():
-    photo_url = request.form["photo_url"]
+    photo_url = request.forms.get("photo_url")
     store_photo(photo_url)
     return redirect('/photos')
 
-# store the url of the uploaded photo in mongodb
+
+@route('/photos/upload', method='GET')
+def submit_photo_form():
+    return template('upload_photo.tpl')
+
+
 def store_photo(photo_url):
-    console.log("storing photo: "+photo_url)
+    '''Store photo url in MongoDB.'''
+    # XXX: Other information to store here?
+    doc = {'url': photo_url, 'upload_date': datetime.datetime.now()}
+    db.photos.save(doc)
+
 
 def main():
     run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=True)

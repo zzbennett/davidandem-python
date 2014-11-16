@@ -12,20 +12,21 @@
 	    var s3upload = new S3Upload({
 		file_dom_selector: 'file',
 		s3_sign_put_url: '/sign_s3',
+                s3_object_name: (new Date()).valueOf() + Math.random().toString().replace(/[^a-z]+/g, ''),
 
-		onProgress: function(percent, message) {
-		     status_elem.innerHTML = 'Upload progress: ' + percent + '% ' + message;
-		},
-		onFinishS3Put: function(url) {
-		     status_elem.innerHTML = 'Upload completed. Uploaded to: '+ url;
-		     url_elem.value = url;
-		     preview_elem.innerHTML = '<img src="'+url+'" crossOrigin="*" style="width:300px;" />';
-		},
-		onError: function(status) {
-		    status_elem.innerHTML = 'Upload error: ' + status;
-		}
-	    });
-	}
+                onProgress: function(percent, message) {
+                     status_elem.innerHTML = 'Upload progress: ' + percent + '% ' + message;
+                },
+                onFinishS3Put: function(url) {
+                     status_elem.innerHTML = 'Upload completed. Uploaded to: '+ url;
+                     url_elem.value = url;
+                     preview_elem.innerHTML = '<img src="'+url+'" crossOrigin="*" style="width:300px;" />';
+                },
+                onError: function(status) {
+                    status_elem.innerHTML = 'Upload error: ' + status;
+                }
+            });
+        }
     </script>
     <!-- webfonts -->
     <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css' />
