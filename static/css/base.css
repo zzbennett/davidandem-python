@@ -16,18 +16,19 @@ body {
 
 #menu-bar {
     background-color: #303030;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 ul.menu-items {
     list-style-type: none;
-    margin: 0 0 0 0px;
+    margin-left: -20px;
 }
 
 ul.menu-items li {
     display: inline;
     font-size: 32px;
-    margin: 0 20 0 0px;
+    margin: 0px 20px 0px 0px;
 }
 
 ul.menu-items li a {
@@ -53,7 +54,11 @@ ul.menu-items li a:hover {
     height: 100%;
 }
 
-#right-side {
+.right-side-margin {
+    margin-left: 20px;
+}
+
+#right-div {
     position: absolute;
     left: 528px;
     top: 0px;
@@ -61,11 +66,10 @@ ul.menu-items li a:hover {
 }
 
 #header {
-    margin-left: 20px;
 }
 
 #content {
-    margin: 20 20 0 20px;
+    margin: 20px;
 }
 
 img.kissing-image {
