@@ -2,6 +2,7 @@
   <head>
     <title>Grid Images Demo</title>
     <link rel="stylesheet" type="text/css" href="/static/css/grid.css" />
+    <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id="grid-wrap">
@@ -33,8 +34,15 @@
     </div>
 
     <!-- center medallion -->
-    <div id="center-medallion">
-      <img src="/static/images/molumen_filigree_square.png" id="medallion-image" />
+    <div id="center-medallion" style="background-image: url(/static/images/Diamond.png)";>
+      <!--<img src="/static/images/Diamond.png" id="medallion-image" />-->
+
+      <div id="david" class="medallian-name">
+	  <h1>David</h1>
+      </div>
+      <div id="emillie" class="medallian-name">
+	  <h1>Emillie</h1>
+      </div>
     </div>
 
   </body>

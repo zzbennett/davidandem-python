@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: 'Vollkorn', serif;
     font-size: 14pt;
+    overflow: hidden;
 }
 
 #header h1 {

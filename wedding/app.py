@@ -57,7 +57,7 @@ def travel_info():
 
 @route('/')
 def main_page():
-    return template('base.tpl')
+    return template('grid.tpl')
 
 
 @route('/sign_s3')
