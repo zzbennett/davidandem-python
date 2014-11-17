@@ -40,7 +40,7 @@ $(document).ready(function () {
 	$(this).css('background-image', 'url("' + imagePair.off + '")');
 
         // Load 'off' image as well.
-        $('<img />').src = imagePair.off;
+        $('<img />').attr('src', imagePair.on).appendTo('body').hide();
 
 	// Attach hover handlers.
 	$(this).hover(

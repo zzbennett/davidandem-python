@@ -51,6 +51,7 @@ div.col3 {
     width: 600px;
     height: 600px;
     background-image: url("/static/images/Diamond.png");
+    pointer-events: none;
 }
 
 #medallion-image {
