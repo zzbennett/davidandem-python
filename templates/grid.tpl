@@ -93,6 +93,7 @@ $(document).ready(function () {
 
       <div id="date-div">
 	  <h1>6.12.2015</h1>
+	  <img src="/static/images/underline.png"></img>
       </div>
 
       <div id="david" class="medallian-name">

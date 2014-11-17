@@ -50,7 +50,7 @@ div.col3 {
     margin-top: -300px;
     width: 600px;
     height: 600px;
-    background-image: url("/static/images/Diamond.png");
+    background-image: url("/static/images/Diamond-knot.png");
     pointer-events: none;
 }
 
@@ -71,6 +71,11 @@ div.col3 {
 #date-div h1 {
     color: #f9f1dc;
     font-size:34px;
+}
+
+#date-div img {
+    margin-left: -18;
+    margin-top: -30;
 }
 
 #david {
