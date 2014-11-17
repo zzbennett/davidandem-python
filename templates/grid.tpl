@@ -3,6 +3,7 @@
     <title>Grid Images Demo</title>
     <link rel="stylesheet" type="text/css" href="/static/css/grid.css" />
     <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     {% block javascript %}
       <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript">
@@ -64,6 +65,7 @@ $(document).ready(function () {
 });
       </script>
     {% endblock javascript %}
+
   </head>
   <body>
     <div id="grid-wrap">
@@ -88,6 +90,10 @@ $(document).ready(function () {
 
     <!-- center medallion -->
     <div id="center-medallion">
+
+      <div id="date-div">
+	  <h1>6.12.2015</h1>
+      </div>
 
       <div id="david" class="medallian-name">
 	  <h1>David</h1>

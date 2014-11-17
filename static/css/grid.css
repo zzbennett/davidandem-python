@@ -50,12 +50,26 @@ div.col3 {
     margin-top: -300px;
     width: 600px;
     height: 600px;
-    background-image: url(/static/images/Diamond.png)
+    background-image: url("/static/images/Diamond.png");
 }
 
 #medallion-image {
     width: 700px;
     height: 700px;
+    position: absolute;
+    left:50%;
+    font-size: 28px;
+}
+
+#date-div {
+    margin-left: 235px;
+    margin-top: 140px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#date-div h1 {
+    color: #f9f1dc;
+    font-size:34px;
 }
 
 #david {
