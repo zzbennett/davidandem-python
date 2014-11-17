@@ -1,0 +1,53 @@
+div.grid-image {
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+div.row0 {
+    top: 0;
+    border-bottom: 10px #1c1c1c solid;
+}
+
+div.row1 {
+    top: 50%;
+    border-top: 10px #1c1c1c solid;
+}
+
+div.col0 {
+    left: 0;
+    border-right: 10px #1c1c1c solid;
+}
+
+div.col1 {
+    left: 25%;
+    border-left: 10px #1c1c1c solid;
+    border-right: 10px #1c1c1c solid;
+}
+
+div.col2 {
+    left: 50%;
+    border-left: 10px #1c1c1c solid;
+    border-right: 10px #1c1c1c solid;
+}
+
+div.col3 {
+    left: 75%;
+    border-left: 10px #1c1c1c solid;
+}
+
+#center-medallion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#medallion-image {
+    position: relative;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+}

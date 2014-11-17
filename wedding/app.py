@@ -37,6 +37,13 @@ def test_images():
     return template('base.tpl')
 
 
+@route('/test/grid')
+def test_grid():
+    # TODO: Use this template for the main page, and make sub-pages
+    # use Bootstrap's modal feature.
+    return template('grid.tpl')
+
+
 @route('/photos')
 def photos():
     all_photos = db.photos.find()

@@ -21,7 +21,7 @@
   <body>
     <div id="wrap">
       <div id="left-side">
-        <img src="/static/images/kiss.jpg" class="kissing-image" />
+        <img src="/static/images/photos/kiss.jpg" class="kissing-image" />
       </div>
       <div id="right-div">
         <div id="header"><h1 id="header-heading" class="right-side-margin">David and Emillie's Joyous Matrimonial Celebration</h1></div>
