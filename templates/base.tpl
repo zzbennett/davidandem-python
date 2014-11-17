@@ -12,7 +12,6 @@
     <title>{% block title %}D & E{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
     {% block stylesheets %}{% endblock %}
-    <script type="text/javascript" src="/static/javascript/s3upload.js"></script>
     {% block javascript %}{% endblock %}
     <!-- webfonts -->
     <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css' />
