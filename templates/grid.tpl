@@ -6,13 +6,27 @@
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     {% block javascript %}
       <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+{% raw %}
+      <script type="text/x-handlebars-template" id="rollover-template">
+	<div class="grid-image grid-off grid-off-{{ row }}-{{ col }} row{{ row }} col{{ col }}"
+	     data-rollover-id="{{ row }}-{{ col }}"
+	     style="background-image: url('{{ imageObj.off }}');">
+	</div>
+	<div class="grid-image grid-on grid-on-{{ row }}-{{ col }} row{{ row }} col{{ col }}"
+	     data-rollover-id="{{ row }}-{{ col }}"
+	     style="background-image: url('{{ imageObj.on }}'); opacity: 0.0;">
+	</div>
+      </script>
+{% endraw %}
       <script type="text/javascript">
 $(document).ready(function () {
     // rows/columns of images.
     var imageGrid = [
 	[
 	    {on: '/static/images/photos/b&w kissing.jpg',
-	     off: '/static/images/photos/modified/b&w kissing sepia.jpg'},
+	     off: '/static/images/photos/modified/b&w kissing sepia.jpg',
+	     position: {x: -200, y: 0}},
 	    {on: '/static/images/photos/b&w smiling.jpg',
 	     off: '/static/images/photos/modified/b&w smiling sepia.jpg'},
 	    {on: '/static/images/photos/cute and smiling in front of structure.jpg',
@@ -22,46 +36,52 @@ $(document).ready(function () {
 	],
 	[
 	    {on: '/static/images/photos/emillie is dipped.jpg',
-	     off: '/static/images/photos/modified/emillie is dipped sepia.jpg'},
+	     off: '/static/images/photos/modified/emillie is dipped sepia.jpg',
+	     position: {x: -280, y: -100}},
 	    {on: '/static/images/photos/emillie looks blissful.jpg',
-	     off: '/static/images/photos/modified/emillie looks blissful sepia.jpg'},
+	     off: '/static/images/photos/modified/emillie looks blissful sepia.jpg',
+	     position: {x: -60, y: -125}},
 	    {on: '/static/images/photos/in street kissing.jpg',
-	     off: '/static/images/photos/modified/in street kissing sepia.jpg'},
+	     off: '/static/images/photos/modified/in street kissing sepia.jpg',
+	     position: {x: 0, y: -100}},
 	    {on: '/static/images/photos/kiss.jpg',
 	     off: '/static/images/photos/modified/kiss sepia.jpg'}
 	]
     ];
 
-    // Preload all images and give background images to divs.
-    $('div.grid-image').each(function(index) {
-	var col = index % 4;
-	var row = index > 3? 1 : 0;
-        var imagePair = imageGrid[row][col];
-	$(this).css('background-image', 'url("' + imagePair.off + '")');
+    // Load Handlebars template.
+    var templateSource = $("#rollover-template").html();
+    var template = Handlebars.compile(templateSource);
 
-        // Load 'off' image as well.
-        $('<img />').attr('src', imagePair.on).appendTo('body').hide();
+    var parentDiv = $("#grid-wrap");
 
-	// Attach hover handlers.
-	$(this).hover(
-	    // hover enter
-	    function() {
-		var index = parseInt($(this).data('index'));
-		var col = index % 4;
-		var row = index > 3? 1 : 0;
-		var imageObj = imageGrid[row][col];
-		$(this).css('background-image', 'url("' + imageObj.on + '")');
-	    },
-	    // hover exit
-	    function() {
-		var index = parseInt($(this).data('index'));
-		var col = index % 4;
-		var row = index > 3? 1 : 0;
-		var imageObj = imageGrid[row][col];
-		$(this).css('background-image', 'url("' + imageObj.off + '")');
-	    }
-	);
-    });
+    for (var row=0; row<imageGrid.length; row++) {
+	for (var col=0; col<imageGrid[row].length; col++) {
+	    var gridDiv = $(template({
+		row: row,
+		col: col,
+		imageObj: imageGrid[row][col]
+	    }));
+	    // Hover handlers
+	    gridDiv.siblings('.grid-on').hover(
+		function() {
+		    var onClass = ".grid-on-" + $(this).data("rollover-id");
+		    var select = $(onClass);
+		    select.stop();
+		    select.fadeTo(200, 1.0);
+		    console.log("hovered over!");
+		},
+		function() {
+		    var onClass = ".grid-on-" + $(this).data("rollover-id");
+		    var select = $(onClass);
+		    select.stop();
+		    select.fadeTo(2000, 0.0);
+		    console.log("hovered out!!!");
+		}
+	    );
+	    parentDiv.append(gridDiv);
+	}
+    }
 });
       </script>
     {% endblock javascript %}
@@ -69,23 +89,6 @@ $(document).ready(function () {
   </head>
   <body>
     <div id="grid-wrap">
-      <div class="grid-image row0 col0" data-index="0">
-      </div>
-      <div class="grid-image row0 col1" data-index="1">
-      </div>
-      <div class="grid-image row0 col2" data-index="2">
-      </div>
-      <div class="grid-image row0 col3" data-index="3">
-      </div>
-
-      <div class="grid-image row1 col0" data-index="4">
-      </div>
-      <div class="grid-image row1 col1" data-index="5">
-      </div>
-      <div class="grid-image row1 col2" data-index="6">
-      </div>
-      <div class="grid-image row1 col3" data-index="7">
-      </div>
     </div>
 
     <!-- center medallion -->
