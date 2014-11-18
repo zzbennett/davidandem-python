@@ -62,12 +62,25 @@ $(document).ready(function () {
 	}
     }
 
-    var closeModals = function(modals) { modals.fadeOut(300); };
+    var closeModals = function(modals) {
+	modals.stop().animate(
+	    {opacity: 0.0},
+	    {
+		duration: 300,
+		complete: function() {
+		    $(this).css("z-index", 0);
+		}
+	    }
+	);
+    };
     var closeAllModals = function() { closeModals( $(".modal") ); };
 
     var openModal = function(page) {
 	closeAllModals();
-	$("#" + page).fadeIn(200);
+	$("#" + page)
+	    .stop()
+	    .animate({opacity: 1.0}, 200)
+	    .css("z-index", 101);
     };
 
     $(".modal-close").click(function() {
