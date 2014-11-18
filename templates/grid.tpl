@@ -69,14 +69,12 @@ $(document).ready(function () {
 		    var select = $(onClass);
 		    select.stop();
 		    select.fadeTo(200, 1.0);
-		    console.log("hovered over!");
 		},
 		function() {
 		    var onClass = ".grid-on-" + $(this).data("rollover-id");
 		    var select = $(onClass);
 		    select.stop();
 		    select.fadeTo(2000, 0.0);
-		    console.log("hovered out!!!");
 		}
 	    );
 	    parentDiv.append(gridDiv);
