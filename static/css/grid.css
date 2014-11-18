@@ -113,6 +113,9 @@ div.col3 {
 
     background-color: #1c1c1c;
     color: white; /* FIXME */
+
+    border-radius: 7px;
+    box-shadow: 6px 11px 13px #1c1c1c;
 }
 
 .modal-body {
