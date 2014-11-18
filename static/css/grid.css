@@ -110,15 +110,30 @@ div.col3 {
     z-index: 100;
     opacity: 0.0;
     z-index: 0;
-    overflow: auto;
 
     background-color: #1c1c1c;
     color: white; /* FIXME */
 }
 
+.modal-body {
+    float: left;
+    top: 100px;
+    width: 780px;
+    margin: 10px;
+    overflow: auto;
+}
+
+.modal-close, .modal-title {
+    margin: 7px;
+}
+
+.modal-title {
+    float: left;
+    font-weight: bold;
+}
+
 .modal-close {
     float: right;
-    margin: 7px;
 }
 
 .modal-close a {
