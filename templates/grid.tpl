@@ -13,12 +13,12 @@
 	<div class="grid-image grid-off grid-off-{{ row }}-{{ col }} row{{ row }} col{{ col }}"
 	     data-rollover-id="{{ row }}-{{ col }}"
 	     {{#if imageObj.page }}data-page="{{ imageObj.page }}"{{/if}}
-	     style="background-image: url('{{ imageObj.off }}');">
+	     style="background-image: url('{{ imageObj.off }}'); background-position: {{ imageObj.position.x }}px {{ imageObj.position.y }}px;">
 	</div>
 	<div class="grid-image grid-on grid-on-{{ row }}-{{ col }} row{{ row }} col{{ col }}"
 	     data-rollover-id="{{ row }}-{{ col }}"
 	     {{#if imageObj.page }}data-page="{{ imageObj.page }}"{{/if}}
-	     style="background-image: url('{{ imageObj.on }}'); opacity: 0.0;">
+	     style="background-image: url('{{ imageObj.on }}'); background-position: {{ imageObj.position.x }}px {{ imageObj.position.y }}px; opacity: 0.0;">
 	</div>
       </script>
 {% endraw %}

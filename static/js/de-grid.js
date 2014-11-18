@@ -2,29 +2,32 @@ $(document).ready(function () {
     // rows/columns of images.
     var imageGrid = [
 	[
-	    {on: '/static/images/photos/b&w kissing.jpg',
-	     off: '/static/images/photos/modified/b&w kissing sepia.jpg',
-	     position: {x: -200, y: 0},
+	    {on: '/static/images/photos/denver.png',
+	     off: '/static/images/photos/modified/denver-sepia.png',
+	     position: {x: -20, y: 0},
 	     page: "travel-info"},
 	    {on: '/static/images/photos/b&w smiling.jpg',
-	     off: '/static/images/photos/modified/b&w smiling sepia.jpg'},
+	     off: '/static/images/photos/modified/b&w smiling sepia.jpg',
+	     position: {x: -140, y: -85}},
 	    {on: '/static/images/photos/cute and smiling in front of structure.jpg',
 	     off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg'},
-	    {on: '/static/images/photos/emillie in front of blue-lit structure.jpg',
-	     off: '/static/images/photos/modified/emillie in front of blue-lit structure sepia.jpg'}
+	    {on: '/static/images/photos/DAC.png',
+	     off: '/static/images/photos/modified/DAC-sepia.png',
+	     position: {x: -115, y: -20}}
 	],
 	[
 	    {on: '/static/images/photos/emillie is dipped.jpg',
 	     off: '/static/images/photos/modified/emillie is dipped sepia.jpg',
-	     position: {x: -280, y: -100}},
-	    {on: '/static/images/photos/emillie looks blissful.jpg',
-	     off: '/static/images/photos/modified/emillie looks blissful sepia.jpg',
-	     position: {x: -60, y: -125}},
+	     position: {x: -280, y: -90}},
 	    {on: '/static/images/photos/in street kissing.jpg',
 	     off: '/static/images/photos/modified/in street kissing sepia.jpg',
 	     position: {x: 0, y: -100}},
+	    {on: '/static/images/photos/emillie looks blissful.jpg',
+	     off: '/static/images/photos/modified/emillie looks blissful sepia.jpg',
+	     position: {x: -60, y: -125}},
 	    {on: '/static/images/photos/kiss.jpg',
-	     off: '/static/images/photos/modified/kiss sepia.jpg'}
+	     off: '/static/images/photos/modified/kiss sepia.jpg',
+	     position: {x: -20, y: -250}}
 	]
     ];
 
