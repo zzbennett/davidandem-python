@@ -111,10 +111,15 @@ div.col3 {
     display: none;
 
     background-color: #1c1c1c;
-    color: white;
+    color: white; /* FIXME */
 }
 
 .modal-close {
     float: right;
     margin: 7px;
+}
+
+.modal-close a {
+    text-decoration: none;
+    color: white; /* FIXME */
 }
