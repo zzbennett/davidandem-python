@@ -2,8 +2,8 @@
   <head>
     <title>Grid Images Demo</title>
     <link rel="stylesheet" type="text/css" href="/static/css/grid.css" />
-    <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css' />
     {% block javascript %}
       <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
@@ -11,10 +11,12 @@
       <script type="text/x-handlebars-template" id="rollover-template">
 	<div class="grid-image grid-off grid-off-{{ row }}-{{ col }} row{{ row }} col{{ col }}"
 	     data-rollover-id="{{ row }}-{{ col }}"
+	     {{#if imageObj.page }}data-page="{{ imageObj.page }}"{{/if}}
 	     style="background-image: url('{{ imageObj.off }}');">
 	</div>
 	<div class="grid-image grid-on grid-on-{{ row }}-{{ col }} row{{ row }} col{{ col }}"
 	     data-rollover-id="{{ row }}-{{ col }}"
+	     {{#if imageObj.page }}data-page="{{ imageObj.page }}"{{/if}}
 	     style="background-image: url('{{ imageObj.on }}'); opacity: 0.0;">
 	</div>
       </script>
@@ -26,7 +28,8 @@ $(document).ready(function () {
 	[
 	    {on: '/static/images/photos/b&w kissing.jpg',
 	     off: '/static/images/photos/modified/b&w kissing sepia.jpg',
-	     position: {x: -200, y: 0}},
+	     position: {x: -200, y: 0},
+	     page: "travel-info"},
 	    {on: '/static/images/photos/b&w smiling.jpg',
 	     off: '/static/images/photos/modified/b&w smiling sepia.jpg'},
 	    {on: '/static/images/photos/cute and smiling in front of structure.jpg',
@@ -76,16 +79,55 @@ $(document).ready(function () {
 		    select.stop();
 		    select.fadeTo(2000, 0.0);
 		}
-	    );
+	    ).click(function(event) {
+		var page = $(this).data("page");
+		handlePage(page);
+		event.stopPropagation();
+	    });
 	    parentDiv.append(gridDiv);
 	}
     }
+
+    var closeModals = function(modals) { modals.fadeOut(300); };
+    var closeAllModals = function() { closeModals( $(".modal") ); };
+
+    var handlePage = function(page) {
+	// Close all other modals.
+	closeAllModals();
+
+	var pageModal = $("#" + page);
+	console.log(pageModal);
+	pageModal.fadeIn(200);
+    };
+
+    $(".modal-close").click(function() {
+	closeModals( $(this).parents(".modal") );
+    });
+
+    $("body").click( closeAllModals );
 });
       </script>
     {% endblock javascript %}
 
   </head>
   <body>
+    <div id="modal-wrap">
+
+
+      <!-- travel info -->
+      <div id="travel-info" class="modal">
+	<div class="modal-header">
+	  <span class="modal-title">Travel Info</span>
+	  <span class="modal-close">&times;</span>
+	</div>
+	<div class="modal-body">
+	  <p>Some awesome information involving maps.</p>
+	</div>
+      </div>
+
+
+    </div>
+
     <div id="grid-wrap">
     </div>
 
@@ -104,6 +146,5 @@ $(document).ready(function () {
 	  <h1>Emillie</h1>
       </div>
     </div>
-
   </body>
 </html>
