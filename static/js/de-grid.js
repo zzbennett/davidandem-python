@@ -46,18 +46,16 @@ $(document).ready(function () {
 		function() {
 		    var onClass = ".grid-on-" + $(this).data("rollover-id");
 		    var select = $(onClass);
-		    select.stop();
-		    select.fadeTo(200, 1.0);
+		    select.stop().fadeTo(200, 1.0);
 		},
 		function() {
 		    var onClass = ".grid-on-" + $(this).data("rollover-id");
 		    var select = $(onClass);
-		    select.stop();
-		    select.fadeTo(2000, 0.0);
+		    select.stop().fadeTo(2000, 0.0);
 		}
 	    ).click(function(event) {
 		var page = $(this).data("page");
-		handlePage(page);
+		openModal(page);
 		event.stopPropagation();
 	    });
 	    parentDiv.append(gridDiv);
@@ -67,13 +65,9 @@ $(document).ready(function () {
     var closeModals = function(modals) { modals.fadeOut(300); };
     var closeAllModals = function() { closeModals( $(".modal") ); };
 
-    var handlePage = function(page) {
-	// Close all other modals.
+    var openModal = function(page) {
 	closeAllModals();
-
-	var pageModal = $("#" + page);
-	console.log(pageModal);
-	pageModal.fadeIn(200);
+	$("#" + page).fadeIn(200);
     };
 
     $(".modal-close").click(function() {
@@ -81,4 +75,5 @@ $(document).ready(function () {
     });
 
     $("body").click( closeAllModals );
+    $(".modal").click(function(event) { event.stopPropagation(); });
 });
