@@ -29,6 +29,7 @@
   </head>
   <body>
 
+
     <!-- travel info -->
     <div id="travel-info" class="modal">
       <div class="modal-header">
@@ -43,6 +44,88 @@
 		class="map" frameborder="0"></iframe>
       </div>
     </div>
+
+
+    <!-- photos -->
+    <div id="photos" class="modal">
+      <div class="modal-header">
+	<span class="modal-title">Photos</span>
+	<span class="modal-close"><a href="#">&times;</a></span>
+      </div>
+      <div class="modal-body">
+	<p class="modal-text">Here are some photos of our favorite most adorable couple!</p>
+	<h2>They Look Like Movie Stars</h2>
+	<!-- copied from google maps, search for "hotels near denver athletic club" -->
+	<img src="http://shechive.files.wordpress.com/2012/02/a-kitty-cat-7.jpg" class="photo-image" />
+      </div>
+    </div>
+
+
+    <!-- wedding day -->
+    <div id="wedding-day" class="modal">
+      <div class="modal-header">
+	<span class="modal-title">Wedding Day</span>
+	<span class="modal-close"><a href="#">&times;</a></span>
+      </div>
+      <div class="modal-body">
+	<p class="modal-text">That's what we came here for, isn't it?</p>
+	<h2>Useful Information</h2>
+	<h3>Schedule of the day</h3>
+	<p>Do stuff. More stuff. Drink. Eat. Dance. Talk.</p>
+	<h3>Where stuff is happening</h3>
+	<p>It's all over the place. Wear your walking shoes. Bring your gym pants.</p>
+	<h3>What to bring</h3>
+	<p>Remember that no flash photography is allowed, so as not to upset the bride and groom.</p>
+      </div>
+    </div>
+
+
+    <!-- rsvp -->
+    <div id="rsvp" class="modal">
+      <div class="modal-header">
+	<span class="modal-title">RSVP</span>
+	<span class="modal-close"><a href="#">&times;</a></span>
+      </div>
+      <div class="modal-body">
+	<p class="modal-text">This is going to be <em>the</em> wedding of Spring 2015, and tickets are already selling out! Get yours now!</p>
+	<h2>Limit of 2 Tickets Per Customer</h2>
+	<img src="http://i270.photobucket.com/albums/jj84/addiewest/gettinheldup.jpg" />
+      </div>
+    </div>
+
+
+    <!-- rsvp -->
+    <div id="registry" class="modal">
+      <div class="modal-header">
+	<span class="modal-title">Registry</span>
+	<span class="modal-close"><a href="#">&times;</a></span>
+      </div>
+      <div class="modal-body">
+	<p class="modal-text">You gotta pay if you wanna see the love.</p>
+	<h2>Limit of 2 Tickets Per Customer</h2>
+	<img src="http://dailykitten.com/wp-content/uploads/2007/03/1173796830boris-bela-3.jpg" />
+      </div>
+    </div>
+
+
+    <!-- about -->
+    <div id="about" class="modal">
+      <div class="modal-header">
+	<span class="modal-title">About</span>
+	<span class="modal-close"><a href="#">&times;</a></span>
+      </div>
+      <div class="modal-body">
+	<p class="modal-text">Learn some stuff about people important to the wedding.</p>
+	<h2>David Bennet</h2>
+	<p>David is witty, wise, and whimsical.</p>
+	<img src="http://lookingtobusiness.com/wp-content/uploads/2010/01/Cat-reading-a-book.jpg" />
+	<h2>Emillie Lastname</h2>
+	<p>Emillie is giggly, gregarious, and good-humored.</p>
+	<h2>Fido Bennett</h2>
+	<p>Fido is resentful, ruthless, and ravenous.</p>
+      </div>
+    </div>
+
 
     <div id="grid-wrap">
     </div>
