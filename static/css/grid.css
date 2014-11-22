@@ -95,18 +95,12 @@ div.col3 {
     color: #333333;
 }
 
-#modal-wrap {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-}
-
 .modal {
-    width: 800px;
-    height: 600px;
-    position: relative;
-    left: -400px;
-    top: -300px;
+    width: 70%;
+    height: 800px; /* makes it much easier to describe heights of things inside */
+    position: absolute;
+    left: 15%;
+    top: calc(50% - 400px);
     z-index: 100;
     opacity: 0.0;
     z-index: 0;
@@ -119,10 +113,11 @@ div.col3 {
 }
 
 .modal-body {
-    float: left;
-    top: 100px;
-    width: 780px;
-    margin: 10px;
+    position: absolute;
+    top: 0px;
+    width: 98%;
+    height: 98%;
+    margin: 1%;
     overflow: auto;
 }
 
@@ -131,8 +126,15 @@ div.col3 {
 }
 
 .modal-title {
-    float: left;
+    /* float: left; */
     font-weight: bold;
+    font-family: 'Tangerine', cursive;
+    font-size: 100px;
+    position: relative;
+    top: -75px;
+    left: -20px;
+    color: #edd13b;
+    text-shadow: 5px 5px 10px #1c1c1c;
 }
 
 .modal-close {
@@ -142,4 +144,15 @@ div.col3 {
 .modal-close a {
     text-decoration: none;
     color: white; /* FIXME */
+}
+
+p.modal-text {
+    margin-top:28px;
+}
+
+iframe.map {
+    position: absolute;
+    top: 18%;
+    height: 81%;
+    width: 100%;
 }
