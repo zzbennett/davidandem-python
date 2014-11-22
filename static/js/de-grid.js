@@ -82,14 +82,21 @@ $(document).ready(function () {
 	    }
 	);
     };
-    var closeAllModals = function() { closeModals( $(".modal") ); };
 
+    var allModals = $(".modal");
+    var closeAllModals = function() { closeModals( allModals ); };
     var openModal = function(page) {
 	closeAllModals();
-	$("#" + page)
-	    .stop()
-	    .animate({opacity: 1.0}, 200)
-	    .css("z-index", 101);
+	// Don't open another modal if there are already some open.
+	var modalsOpen = allModals.filter(
+	    function() { return parseFloat($(this).css("opacity")) > 0.0; }
+	).length > 0;
+	if (! modalsOpen) {
+	    $("#" + page)
+		.stop()
+		.animate({opacity: 1.0}, 200)
+		.css("z-index", 101);
+	}
     };
 
     $(".modal-close").click(function() {
