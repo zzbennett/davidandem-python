@@ -8,12 +8,15 @@ $(document).ready(function () {
 	     page: "travel-info"},
 	    {on: '/static/images/photos/b&w smiling.jpg',
 	     off: '/static/images/photos/modified/b&w smiling sepia.jpg',
-	     position: {x: -140, y: -85}},
+	     position: {x: -140, y: -85},
+	     page: "about"},
 	    {on: '/static/images/photos/cute and smiling in front of structure.jpg',
-	     off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg'},
+	     off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg',
+	     page: "wedding-day"},
 	    {on: '/static/images/photos/DAC.png',
 	     off: '/static/images/photos/modified/DAC-sepia.png',
-	     position: {x: -175, y: -20}}
+	     position: {x: -175, y: -20},
+	     page: "wedding-day"}
 	],
 	[
 	    {on: '/static/images/photos/emillie is dipped.jpg',
@@ -21,13 +24,16 @@ $(document).ready(function () {
 	     position: {x: -280, y: -90}},
 	    {on: '/static/images/photos/Ampersand.png',
 	     off: '/static/images/photos/modified/Ampersand-sepia.png',
-	     position: {x: 0, y: -100}},
+	     position: {x: 0, y: -200},
+	     page: "registry"},
 	    {on: '/static/images/photos/emillie looks blissful.jpg',
 	     off: '/static/images/photos/modified/emillie looks blissful sepia.jpg',
-	     position: {x: -60, y: -125}},
+	     position: {x: -60, y: -125},
+	     page: "rsvp"},
 	    {on: '/static/images/photos/kiss.jpg',
 	     off: '/static/images/photos/modified/kiss sepia.jpg',
-	     position: {x: -20, y: -250}}
+	     position: {x: -20, y: -250},
+	     page: "photos"}
 	]
     ];
 
