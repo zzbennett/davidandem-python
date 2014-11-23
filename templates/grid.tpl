@@ -67,6 +67,10 @@
             <img src="{{ photo.link }}" />
           {% endfor %}
         </div>
+        <form method="POST" action="/photo-upload" enctype="multipart/form-data">
+          <input type="file" name="photo_file" id="photo_file"
+                 accept="image/bmp, image/gif, image/jpeg, image/tif, image/tiff, image/png" />
+          <input type="submit" value="upload" />
       </div>
     </div>
 

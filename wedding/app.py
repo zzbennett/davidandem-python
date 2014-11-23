@@ -1,7 +1,7 @@
 import os
 
 from bottle import (
-    TEMPLATE_PATH, route, run, static_file, redirect,
+    TEMPLATE_PATH, route, run, static_file, redirect, request,
     jinja2_template as template
 )
 from pymongo import MongoClient
@@ -33,8 +33,10 @@ def main_page():
 
 @route('/photo-upload', method='POST')
 def submit_photo():
-    # TODO: hook into imgur upload.
-    return redirect('/photos')
+    # Could also include title/description here with kwargs.
+    imgur_helper.upload_from_buffer(request.files.photo_file.file)
+    # This happens to refresh the display of images.
+    return redirect('/')
 
 
 def main():
