@@ -30,6 +30,30 @@
       </script>
 {% endraw %}
       <script type="text/javascript" src="/static/js/de-grid.js"> </script>
+      <script type="text/javascript">
+$(document).ready(function() {
+    // Needs to be rendered into the page.
+    var photosLinks = {{ photo_links }};
+    var currentIndex = 0;
+
+    var photoImg = $("#photo-img");
+
+    // Forward button
+    $("#forward-photo").click(function() {
+        if (currentIndex + 1 < photosLinks.length) {
+            currentIndex++;
+            photoImg.attr("src", photosLinks[currentIndex]);
+        }
+    });
+    // Backward button
+    $("#backward-photo").click(function() {
+        if (currentIndex - 1 >= 0) {
+            currentIndex--;
+            photoImg.attr("src", photosLinks[currentIndex]);
+        }
+    });
+});
+      </script>
     {% endblock javascript %}
 
   </head>
@@ -62,10 +86,12 @@
         <p class="modal-text">Here are some photos of our favorite most adorable couple!</p>
         <h2>They Look Like Movie Stars</h2>
         <!-- <img src="http://shechive.files.wordpress.com/2012/02/a-kitty-cat-7.jpg" class="photo-image" /> -->
-        <div id="photo-wrap">
-          {% for photo in photos %}
-            <img src="{{ photo.link }}" />
-          {% endfor %}
+        <img id="photo-img" />
+        <div id="forward-photo">
+          Next
+        </div>
+        <div id="backward-photo">
+          Prev
         </div>
         <form method="POST" action="/photo-upload" enctype="multipart/form-data">
           <input type="file" name="photo_file" id="photo_file"

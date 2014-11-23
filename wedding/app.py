@@ -28,7 +28,8 @@ def static(filename):
 @route('/')
 def main_page():
     # Refresh photos on page reload.
-    return template('grid.tpl', photos=imgur_helper.all_photos())
+    photo_links = [str(photo.link) for photo in imgur_helper.all_photos()]
+    return template('grid.tpl', photo_links=photo_links)
 
 
 @route('/photo-upload', method='POST')
