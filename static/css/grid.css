@@ -21,6 +21,8 @@ div.grid-image {
     height: 50%;
     overflow: hidden;
     box-sizing: border-box;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 div.row0 {
