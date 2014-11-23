@@ -182,10 +182,10 @@ h2.grid-title {
     font-family: 'Limelight', cursive;
     font-size: 28pt;
     text-shadow: 1px 1px 0 #1c1c1c,
-		 -1px -1px 0 #1c1c1c,
-		 1px -1px 0 #1c1c1c,
-		 -1px 1px 0 #1c1c1c,
-		 3px 3px 5px #333;
+                 -1px -1px 0 #1c1c1c,
+                 1px -1px 0 #1c1c1c,
+                 -1px 1px 0 #1c1c1c,
+                 3px 3px 5px #333;
 }
 
 h2.grid-title-row-0 {
