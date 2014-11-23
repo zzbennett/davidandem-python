@@ -81,8 +81,8 @@ $(document).ready(function () {
 			    });
 			}
 			// Move both on and off titles to new location.
-			myTitle.animate({left: "60px", top: "100px"}, {duration: titleSlideDuration});
-			offTitle.animate({left: "60px", top: "100px"}, {duration: titleSlideDuration});
+			myTitle.animate({left: "30px", top: "30px"}, {duration: titleSlideDuration});
+			offTitle.animate({left: "30px", top: "30px"}, {duration: titleSlideDuration});
 		    } else if (myTitle.hasClass("grid-title-row-1")) {
 			// If we're on the bottom row...
 			// Record where the original bottom/right coordinates were.
@@ -93,8 +93,8 @@ $(document).ready(function () {
 			    });
 			}
 			// Move both on and off title sto new location.
-			myTitle.animate({right: "60px", bottom: "100px"}, {duration: titleSlideDuration});
-			offTitle.animate({right: "60px", bottom: "100px"}, {duration: titleSlideDuration});
+			myTitle.animate({right: "30px", bottom: "30px"}, {duration: titleSlideDuration});
+			offTitle.animate({right: "30px", bottom: "30px"}, {duration: titleSlideDuration});
 		    }
 		},
 		function() {
