@@ -6,6 +6,7 @@ from bottle import (
 )
 from pymongo import MongoClient
 
+from wedding import imgur_helper
 
 # Return a filesystem path relative to the root of the project.
 from_here = lambda s: os.path.join(
@@ -26,7 +27,8 @@ def static(filename):
 
 @route('/')
 def main_page():
-    return template('grid.tpl')
+    # Refresh photos on page reload.
+    return template('grid.tpl', photos=imgur_helper.all_photos())
 
 
 @route('/photo-upload', method='POST')
@@ -36,6 +38,8 @@ def submit_photo():
 
 
 def main():
+    # Take care of getting album id asap.
+    imgur_helper.get_wedding_album_id()
     run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=True)
 
 

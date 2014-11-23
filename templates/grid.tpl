@@ -61,7 +61,12 @@
       <div class="modal-body">
         <p class="modal-text">Here are some photos of our favorite most adorable couple!</p>
         <h2>They Look Like Movie Stars</h2>
-        <img src="http://shechive.files.wordpress.com/2012/02/a-kitty-cat-7.jpg" class="photo-image" />
+        <!-- <img src="http://shechive.files.wordpress.com/2012/02/a-kitty-cat-7.jpg" class="photo-image" /> -->
+        <div id="photo-wrap">
+          {% for photo in photos %}
+            <img src="{{ photo.link }}" />
+          {% endfor %}
+        </div>
       </div>
     </div>
 

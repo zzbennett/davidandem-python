@@ -20,7 +20,7 @@ client = imgurpython.ImgurClient(
 
 
 def upload_from_buffer(buff, title=None, description=None):
-    '''Upload an image stored in a buffer to imgur.'''
+    """Upload an image stored in a buffer to imgur."""
     assert(ALBUM_ID is not None)
 
     data = {
@@ -36,7 +36,15 @@ def upload_from_buffer(buff, title=None, description=None):
     return client.make_request('POST', 'upload', data, False)
 
 
-def main():
+def all_photos():
+    """Get all photos in the wedding album."""
+    return client.get_album_images(ALBUM_ID)
+
+
+def get_wedding_album_id():
+    """Get the id for the wedding album.
+    This needs to be called before anything else in this module.
+    """
     albums = client.get_account_albums(CLIENT_USERNAME)
     for album in albums:
         if album.title == 'wedding':
@@ -50,7 +58,3 @@ def main():
         wedding_album = client.get_album(response['id'])
     global ALBUM_ID
     ALBUM_ID = wedding_album.id
-
-
-if __name__ == '__main__':
-    main()
