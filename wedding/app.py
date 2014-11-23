@@ -24,45 +24,15 @@ def static(filename):
     return static_file(filename, root=from_here('static'))
 
 
-@route('/test/images')
-def test_images():
-    return template('base.tpl')
-
-
-@route('/test/grid')
-def test_grid():
-    # TODO: Use this template for the main page, and make sub-pages
-    # use Bootstrap's modal feature.
-    return template('grid.tpl')
-
-
-@route('/photos')
-def photos():
-    all_photos = db.photos.find()
-    return template('photos.tpl', photos=list(all_photos))
-
-
-@route('/travel-info')
-def travel_info():
-    return template('travel-info.tpl')
-
-
 @route('/')
 def main_page():
     return template('grid.tpl')
 
 
-@route('/photos/upload', method='POST')
+@route('/photo-upload', method='POST')
 def submit_photo():
     # TODO: hook into imgur upload.
     return redirect('/photos')
-
-
-@route('/photos/upload', method='GET')
-def submit_photo_form():
-    # TODO: provide some kind of template containing a form for image
-    # upload to imgur. This may be the same view as the gallery.
-    return redirect('/')
 
 
 def main():
