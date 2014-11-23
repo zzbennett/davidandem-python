@@ -1,5 +1,18 @@
 body {
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1c1c;
+    margin: 0px;
+}
+
+#grid-wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    max-height: 1575px;
+    max-width: 2455px;
 }
 
 div.grid-image {
