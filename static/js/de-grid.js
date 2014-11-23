@@ -74,20 +74,24 @@ $(document).ready(function () {
 		    if (myTitle.hasClass("grid-title-row-0")) {
 			// If we're on the top row...
 			// Record where the original top/left coordinates were.
-			myTitle.data({
-			    "orig-left": myTitle.css("left"),
-			    "orig-top": myTitle.css("top")
-			});
+			if (! myTitle.data("orig-left")) {
+			    myTitle.data({
+				"orig-left": myTitle.css("left"),
+				"orig-top": myTitle.css("top")
+			    });
+			}
 			// Move both on and off titles to new location.
 			myTitle.animate({left: "60px", top: "100px"}, {duration: titleSlideDuration});
 			offTitle.animate({left: "60px", top: "100px"}, {duration: titleSlideDuration});
 		    } else if (myTitle.hasClass("grid-title-row-1")) {
 			// If we're on the bottom row...
 			// Record where the original bottom/right coordinates were.
-			myTitle.data({
-			    "orig-right": myTitle.css("right"),
-			    "orig-bottom": myTitle.css("bottom")
-			});
+			if (! myTitle.data("orig-right")) {
+			    myTitle.data({
+				"orig-right": myTitle.css("right"),
+				"orig-bottom": myTitle.css("bottom")
+			    });
+			}
 			// Move both on and off title sto new location.
 			myTitle.animate({right: "60px", bottom: "100px"}, {duration: titleSlideDuration});
 			offTitle.animate({right: "60px", bottom: "100px"}, {duration: titleSlideDuration});
