@@ -15,11 +15,17 @@
 	     data-rollover-id="{{ row }}-{{ col }}"
 	     {{#if imageObj.page }}data-page="{{ imageObj.page }}"{{/if}}
 	     style="background-image: url('{{ imageObj.off }}'); background-position: {{ imageObj.position.x }}px {{ imageObj.position.y }}px;">
+	     {{#if pageTitle }}
+	     <h2 class="grid-title grid-title-row-{{ row }}">{{ pageTitle }}</h2>
+	     {{/if}}
 	</div>
 	<div class="grid-image grid-on grid-on-{{ row }}-{{ col }} row{{ row }} col{{ col }}"
 	     data-rollover-id="{{ row }}-{{ col }}"
 	     {{#if imageObj.page }}data-page="{{ imageObj.page }}"{{/if}}
 	     style="background-image: url('{{ imageObj.on }}'); background-position: {{ imageObj.position.x }}px {{ imageObj.position.y }}px; opacity: 0.0;">
+	     {{#if pageTitle }}
+	     <h2 class="grid-title grid-title-row-{{ row }}">{{ pageTitle }}</h2>
+	     {{/if}}
 	</div>
       </script>
 {% endraw %}
@@ -31,7 +37,7 @@
 
 
     <!-- travel info -->
-    <div id="travel-info" class="modal">
+    <div id="travel-information" class="modal">
       <div class="modal-header">
 	<span class="modal-title">Travel Information</span>
 	<span class="modal-close"><a href="#">&times;</a></span>
@@ -81,7 +87,7 @@
 
 
     <!-- rsvp -->
-    <div id="rsvp" class="modal">
+    <div id="RSVP" class="modal">
       <div class="modal-header">
 	<span class="modal-title">RSVP</span>
 	<span class="modal-close"><a href="#">&times;</a></span>
