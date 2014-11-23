@@ -61,7 +61,6 @@
       <div class="modal-body">
         <p class="modal-text">Here are some photos of our favorite most adorable couple!</p>
         <h2>They Look Like Movie Stars</h2>
-        <!-- copied from google maps, search for "hotels near denver athletic club" -->
         <img src="http://shechive.files.wordpress.com/2012/02/a-kitty-cat-7.jpg" class="photo-image" />
       </div>
     </div>
