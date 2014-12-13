@@ -6,6 +6,18 @@ body {
     margin: 0px;
 }
 
+a {
+    color: #edd13b;
+}
+
+a:hover {
+    color: #fff24c;
+}
+
+h2 {
+    color: #edd13b;
+}
+
 #grid-wrap {
     height: 100%;
     width: 100%;
@@ -94,7 +106,15 @@ div.col3 {
 }
 
 #david {
-    margin-left: 75px;
+    margin-left: 71px;
+}
+
+#david-h1 {
+    margin-left: 20px;
+}
+
+#emillie-h1 {
+    margin-left: 15px;
 }
 
 #emillie {
@@ -102,20 +122,26 @@ div.col3 {
 }
 
 .medallian-name {
-    margin-top: -60px;
+    margin-top: -117px;
+    margin-left: 30px;
     position: absolute;
     top: 50%;
-    font-family: 'Limelight', cursive;
-    font-size: 24px;
+    font-family: 'Zakia';
+    font-size: 26px;
     color: #333333;
+}
+.name-underline {
+    margin-top: -75px;
+    width: 235px;
+    margin-left: -25px;
 }
 
 .modal {
     width: 70%;
-    height: 800px; /* makes it much easier to describe heights of things inside */
+    height: 75%;
     position: absolute;
     left: 15%;
-    top: calc(50% - 400px);
+    top: calc(50% - 300px);
     z-index: 100;
     opacity: 0.0;
     z-index: 0;
@@ -143,11 +169,11 @@ div.col3 {
 .modal-title {
     /* float: left; */
     font-weight: bold;
-    font-family: 'Tangerine', cursive;
-    font-size: 100px;
+    font-family: 'Zakia';
+    font-size: 90px;
     position: relative;
-    top: -75px;
-    left: -20px;
+    top: -120px;
+    left: 20px;
     color: #edd13b;
     text-shadow: 5px 5px 10px #1c1c1c;
 }
@@ -166,10 +192,13 @@ p.modal-text {
 }
 
 iframe.map {
-    position: absolute;
-    top: 18%;
+    position: relative;
+    top: 0%;
     height: 81%;
-    width: 100%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 6%;
 }
 
 .grid-off .grid-title {
@@ -201,4 +230,9 @@ h2.grid-title-row-1 {
 /* photo stuff */
 #foward-photo, #backward-photo {
     background-color: blue;
+}
+
+@font-face {
+    font-family: 'Zakia';
+    src: url('/static/fonts/zakia-webfont.ttf') format('truetype');
 }

@@ -5,9 +5,8 @@ $(document).ready(function () {
             {on: '/static/images/photos/denver.png',
              off: '/static/images/photos/modified/denver-sepia.png',
              page: "travel-information"},
-            {on: '/static/images/photos/b&w smiling.jpg',
-             off: '/static/images/photos/modified/b&w smiling sepia.jpg',
-             page: "about"},
+            {on: '/static/images/photos/emillie is dipped.jpg',
+             off: '/static/images/photos/modified/emillie is dipped sepia.jpg'},
             {on: '/static/images/photos/cute and smiling in front of structure.jpg',
              off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg',
              page: "wedding-day"},
@@ -16,8 +15,9 @@ $(document).ready(function () {
              page: "wedding-day"}
         ],
         [
-            {on: '/static/images/photos/emillie is dipped.jpg',
-             off: '/static/images/photos/modified/emillie is dipped sepia.jpg'},
+            {on: '/static/images/photos/b&w smiling.jpg',
+             off: '/static/images/photos/modified/b&w smiling sepia.jpg',
+             page: "about"},
             {on: '/static/images/photos/Ampersand.png',
              off: '/static/images/photos/modified/Ampersand-sepia.png',
              page: "registry"},
