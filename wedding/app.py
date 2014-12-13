@@ -18,6 +18,9 @@ TEMPLATE_PATH.append(from_here('templates'))
 MONGO_URL = os.environ.get('MONGOHQ_URL', "mongodb://localhost:27017")
 db = MongoClient(MONGO_URL).wedding
 
+@route('/favicon.ico')
+def favicon():
+    return static_file("favicon.ico", root=from_here('static'))
 
 @route('/static/<filename:path>')
 def static(filename):

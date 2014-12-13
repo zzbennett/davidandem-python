@@ -1,12 +1,13 @@
 <html>
   <head>
-    <title>Grid Images Demo</title>
+    <title>David and Emillie's Wedding</title>
     <link rel="stylesheet" type="text/css" href="/static/css/maps.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/grid.css" />
     <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css' />
     <link href='/static/fonts/zakia-webfont.ttf' rel='stylesheet' type='text/css' />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     {% block javascript %}
       <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
