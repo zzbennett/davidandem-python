@@ -53,8 +53,11 @@ def submit_photo():
     # Could also include title/description here with kwargs.
     result = imgur_helper.upload_from_buffer(request.files.photo_file.file)
     LOG.debug('uploaded photo, result was: %r' % result)
-    # This happens to refresh the display of images.
-    return redirect('/')
+    photo_links = map(_photo_info, imgur_helper.all_photos())
+    photos_json = json.dumps(photo_links)
+    LOG.debug('returning all photos after upload: %s' % photos_json)
+    # Return all current images.
+    return photos_json
 
 
 def main():
