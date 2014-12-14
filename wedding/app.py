@@ -7,7 +7,6 @@ from bottle import (
     TEMPLATE_PATH, route, run, static_file, redirect, request,
     jinja2_template as template
 )
-from pymongo import MongoClient
 
 from wedding import imgur_helper
 
@@ -21,9 +20,6 @@ from_here = lambda s: os.path.join(
 
 # Add template directory to where Bottle looks for templates.
 TEMPLATE_PATH.append(from_here('templates'))
-
-MONGO_URL = os.environ.get('MONGOHQ_URL', "mongodb://localhost:27017")
-db = MongoClient(MONGO_URL).wedding
 
 @route('/favicon.ico')
 def favicon():

@@ -9,7 +9,6 @@ jedi==0.8.1-final0
 mccabe==0.2.1
 pep8==1.5.7
 pyflakes==0.8.1
-pymongo==2.7.2
 requests==2.4.3
 sexpdata==0.0.3
 wsgiref==0.1.2
