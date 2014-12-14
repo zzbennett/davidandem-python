@@ -8,10 +8,9 @@ $(document).ready(function () {
             {on: '/static/images/photos/emillie is dipped.jpg',
              off: '/static/images/photos/modified/emillie is dipped sepia.jpg'},
             {on: '/static/images/photos/cute and smiling in front of structure.jpg',
-             off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg',
-             page: "wedding-day"},
-            {on: '/static/images/photos/DAC.png',
-             off: '/static/images/photos/modified/DAC-sepia.png',
+             off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg'},
+            {on: '/static/images/photos/pretty-dav.png',
+             off: '/static/images/photos/modified/pretty-dav-sepia.png',
              page: "wedding-day"}
         ],
         [
