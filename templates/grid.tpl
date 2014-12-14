@@ -97,12 +97,18 @@ $(document).ready(function() {
         <span class="modal-close"><a href="#">&times;</a></span>
       </div>
       <div class="modal-body">
+        <!-- text before photo -->
         <p class="modal-text"> Hmmm… you know what this looks like? Looks like a great opportunity to upload any pictures you may have of Emillie and Dave that they might not know about. You know how bad they are about taking pictures? It’s ridiculous, considering how many of Emillie’s family members are photographers, that she’s so reticent to take any pictures. Idiot. </p>
 	<p>Anyway, if you have any, be they sweet, kinda weird, downright hilarious, whatever—Please leave them here!</p>
+
+        <!-- the actual photo -->
         <div id="photo-img-wrap">
           <img id="photo-img" />
         </div>
+
+        <!-- various gadgets underneath photo -->
         <div id="photo-img-footer">
+          <!-- prev/next buttons -->
           <div id="photo-img-buttons-wrap">
             <button id="backward-photo">
               &lt;&lt; prev
@@ -111,9 +117,13 @@ $(document).ready(function() {
               next &gt;&gt;
             </button>
           </div>
+
+          <!-- progress through photos -->
           <div id="photo-counter">
             X/Y
           </div>
+
+          <!-- upload form -->
           <form id="upload-photo-form" method="POST" action="/photo-upload" enctype="multipart/form-data">
             <input type="file" name="photo_file" id="photo_file"
                    accept="image/bmp, image/gif, image/jpeg, image/tif, image/tiff, image/png" />
@@ -121,7 +131,7 @@ $(document).ready(function() {
         </form>
         </div>
       </div>
-    </div>
+    </div> <!-- end photos -->
 
 
     <!-- wedding day -->
