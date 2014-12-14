@@ -186,7 +186,6 @@ $(document).ready(function() {
 
       <div id="date-div">
           <h1>6.12.2015</h1>
-        <img src="/static/images/Flourish.svg"  style="margin-left: calc(50% - 200px);"/>
       </div>
 
       <div id="david" class="medallian-name">
