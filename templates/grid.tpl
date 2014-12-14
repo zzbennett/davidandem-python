@@ -38,27 +38,29 @@ $(document).ready(function() {
     var photosLinks = {{ photo_links }};
     var currentIndex = 0;
 
+    var photoCounter = $("#photo-counter");
     var photoImg = $("#photo-img");
+
+    var showPhotoAtIndex = function(index) {
+        photoImg.attr({src: photosLinks[index].href});
+        photoCounter.text("photo " + (index + 1) + "/" + photosLinks.length);
+    };
 
     // Setup initial image if there is one.
     if (photosLinks.length > 0) {
-        photoImg.attr("src", photosLinks[0].href);
+        showPhotoAtIndex(0);
     }
 
     // Forward button
     $("#forward-photo").click(function() {
         if (currentIndex + 1 < photosLinks.length) {
-            currentIndex++;
-            img = photosLinks[currentIndex];
-            photoImg.attr({src: img.href});
+            showPhotoAtIndex(++currentIndex);
         }
     });
     // Backward button
     $("#backward-photo").click(function() {
         if (currentIndex - 1 >= 0) {
-            currentIndex--;
-            img = photosLinks[currentIndex];
-            photoImg.attr({src: img.href});
+            showPhotoAtIndex(--currentIndex);
         }
     });
 });
