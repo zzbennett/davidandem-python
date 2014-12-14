@@ -11,6 +11,7 @@ ALBUM_NAME = 'wedding'
 CLIENT_USERNAME = getenv('IMGUR_CLIENT_USERNAME')
 CLIENT_ID = getenv('IMGUR_CLIENT_ID')
 CLIENT_SECRET = getenv('IMGUR_CLIENT_SECRET')
+ALBUM_ID = getenv('IMGUR_ALBUM_ID')
 
 ACCESS_TOKEN = getenv('IMGUR_ACCESS_TOKEN')
 REFRESH_TOKEN = getenv('IMGUR_REFRESH_TOKEN')
@@ -39,22 +40,3 @@ def upload_from_buffer(buff, title=None, description=None):
 def all_photos():
     """Get all photos in the wedding album."""
     return client.get_album_images(ALBUM_ID)
-
-
-def get_wedding_album_id():
-    """Get the id for the wedding album.
-    This needs to be called before anything else in this module.
-    """
-    albums = client.get_account_albums(CLIENT_USERNAME)
-    for album in albums:
-        if album.title == 'wedding':
-            wedding_album = album
-            break
-    else:
-        response = client.create_album({
-            'title': 'wedding',
-            'privacy': 'private'
-        })
-        wedding_album = client.get_album(response['id'])
-    global ALBUM_ID
-    ALBUM_ID = wedding_album.id

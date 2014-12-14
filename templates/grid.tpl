@@ -40,6 +40,11 @@ $(document).ready(function() {
 
     var photoImg = $("#photo-img");
 
+    // Setup initial image if there is one.
+    if (photosLinks.length > 0) {
+        photoImg.attr("src", photosLinks[0]);
+    }
+
     // Forward button
     $("#forward-photo").click(function() {
         if (currentIndex + 1 < photosLinks.length) {

@@ -1,4 +1,6 @@
+import logging
 import os
+import sys
 
 from bottle import (
     TEMPLATE_PATH, route, run, static_file, redirect, request,
@@ -7,6 +9,10 @@ from bottle import (
 from pymongo import MongoClient
 
 from wedding import imgur_helper
+
+LOG = logging.getLogger(__name__)
+LOG.addHandler(logging.StreamHandler(sys.stderr))
+LOG.setLevel(logging.DEBUG)
 
 # Return a filesystem path relative to the root of the project.
 from_here = lambda s: os.path.join(
@@ -38,14 +44,13 @@ def main_page():
 @route('/photo-upload', method='POST')
 def submit_photo():
     # Could also include title/description here with kwargs.
-    imgur_helper.upload_from_buffer(request.files.photo_file.file)
+    result = imgur_helper.upload_from_buffer(request.files.photo_file.file)
+    LOG.debug('uploaded photo, result was: %r' % result)
     # This happens to refresh the display of images.
     return redirect('/')
 
 
 def main():
-    # Take care of getting album id asap.
-    imgur_helper.get_wedding_album_id()
     run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=True)
 
 
