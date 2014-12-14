@@ -161,6 +161,7 @@ $(document).ready(function() {
       <div class="modal-body">
         <p class="modal-text">Hey look at this fancy tech goodness! This is where you can RSVP! Online! Fill out the information and it will be popped into a spreadsheet that tracks who is coming and who is totally missing out. Thank god for Elizabeth Bennett (Fancy Tech Goddess)!</p>
 	<p>You can also RSVP by phone, email, or by text, but not by fax. Faxes are an outdated technology and don’t get Emillie started on faxes or she’ll go on, and on, and on</p>
+      <iframe src="https://docs.google.com/forms/d/1mq0wDmh_B0IH0GyEo9IadiqMR-OojvirPRwqnlPE4Dg/viewform?embedded=true" width="760" height="850" frameborder="0" marginheight="0" marginwidth="0" style="margin-left: calc(50% - 370px);" scrolling="no">Loading...</iframe>
       </div>
     </div>
 
