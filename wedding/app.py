@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 import sys
@@ -34,11 +35,21 @@ def static(filename):
     return static_file(filename, root=from_here('static'))
 
 
+def _photo_info(photo):
+    return {
+        'width': photo.width,
+        'height': photo.height,
+        'href': photo.link
+    }
+
+
 @route('/')
 def main_page():
     # Refresh photos on page reload.
-    photo_links = [str(photo.link) for photo in imgur_helper.all_photos()]
-    return template('grid.tpl', photo_links=photo_links)
+    photo_links = map(_photo_info, imgur_helper.all_photos())
+    photos_json = json.dumps(photo_links)
+    LOG.debug('photo_links = %s' % photos_json)
+    return template('grid.tpl', photo_links=photos_json)
 
 
 @route('/photo-upload', method='POST')

@@ -228,8 +228,31 @@ h2.grid-title-row-1 {
 }
 
 /* photo stuff */
-#foward-photo, #backward-photo {
-    background-color: blue;
+#forward-photo, #backward-photo {
+    display: inline;
+    margin: 10 0px;
+    color: #edd13b;
+}
+
+#photo-img-buttons-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+#photo-img {
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#photo-img-wrap {
+    background-color: black;
+    height: 50%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @font-face {
