@@ -230,13 +230,28 @@ h2.grid-title-row-1 {
 /* photo stuff */
 #forward-photo, #backward-photo {
     display: inline;
-    margin: 10 0px;
+    margin: 0px;
     color: #edd13b;
+}
+
+#photo-img-footer {
+    position: relative;
+    margin-top: 10px;
 }
 
 #photo-img-buttons-wrap {
     width: 100%;
     text-align: center;
+    position: absolute;
+}
+
+#photo-counter {
+    position: absolute;
+    right: 0px;
+}
+
+#upload-photo-form {
+    position: absolute;
 }
 
 #photo-img {
