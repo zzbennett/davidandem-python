@@ -120,39 +120,44 @@ $(document).ready(function() {
       </div>
       <div class="modal-body">
         <!-- text before photo -->
-        <p class="modal-text"> Hmmm… you know what this looks like? Looks like a great opportunity to upload any pictures you may have of Emillie and Dave that they might not know about. You know how bad they are about taking pictures? It’s ridiculous, considering how many of Emillie’s family members are photographers, that she’s so reticent to take any pictures. Idiot. </p>
-	<p>Anyway, if you have any, be they sweet, kinda weird, downright hilarious, whatever—Please leave them here!</p>
-
-        <!-- the actual photo -->
-        <div id="photo-img-wrap">
-          <a href="#" target="_blank"><img id="photo-img" /></a>
+        <div id="photo-modal-text">
+          <p class="modal-text"> Hmmm… you know what this looks like? Looks like a great opportunity to upload any pictures you may have of Emillie and Dave that they might not know about. You know how bad they are about taking pictures? It’s ridiculous, considering how many of Emillie’s family members are photographers, that she’s so reticent to take any pictures. Idiot. </p>
+	  <p>Anyway, if you have any, be they sweet, kinda weird, downright hilarious, whatever—Please leave them here!</p>
         </div>
 
-        <!-- various gadgets underneath photo -->
-        <div id="photo-img-footer">
-          <!-- prev/next buttons -->
-          <div id="photo-img-buttons-wrap">
-            <button id="backward-photo">
-              &lt;&lt; prev
-            </button>
-            <button id="forward-photo">
-              next &gt;&gt;
-            </button>
+        <!-- photo and associated widgets -->
+        <div id="photo-modal-widgets">
+          <!-- the actual photo -->
+          <div id="photo-img-wrap">
+            <a href="#" target="_blank"><img id="photo-img" /></a>
           </div>
 
-          <!-- progress through photos -->
-          <div id="photo-counter">
-            X/Y
-          </div>
+          <!-- various gadgets underneath photo -->
+          <div id="photo-img-footer">
+            <!-- prev/next buttons -->
+            <div id="photo-img-buttons-wrap">
+              <button id="backward-photo">
+                &lt;&lt; prev
+              </button>
+              <button id="forward-photo">
+                next &gt;&gt;
+              </button>
+            </div>
 
-          <!-- upload form -->
-          <div id="form-wrap">
-            <form id="upload-photo-form" method="POST" action="/photo-upload" enctype="multipart/form-data">
-              <input type="file" name="photo_file" id="photo_file"
-                     accept="image/bmp, image/gif, image/jpeg, image/tif, image/tiff, image/png" />
-              <input type="submit" value="upload" />
-            </form>
-            <img id="upload-progress-indicator" src="/static/images/ajax-loader.gif" />
+            <!-- progress through photos -->
+            <div id="photo-counter">
+              X/Y
+            </div>
+
+            <!-- upload form -->
+            <div id="form-wrap">
+              <form id="upload-photo-form" method="POST" action="/photo-upload" enctype="multipart/form-data">
+                <input type="file" name="photo_file" id="photo_file"
+                       accept="image/bmp, image/gif, image/jpeg, image/tif, image/tiff, image/png" />
+                       <input type="submit" value="upload" />
+              </form>
+              <img id="upload-progress-indicator" src="/static/images/ajax-loader.gif" />
+            </div>
           </div>
         </div>
       </div>

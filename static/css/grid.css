@@ -228,6 +228,17 @@ h2.grid-title-row-1 {
 }
 
 /* photo stuff */
+#photo-modal-text {
+    height: 140px;
+}
+
+#photo-modal-widgets {
+    height: calc(100% - 165px - 35px); /* all space, minus space from top, minus space for footer */
+    width: 100%;
+    top: 165px;
+    position: absolute;
+}
+
 #forward-photo, #backward-photo {
     display: inline;
     margin: 0px;
@@ -237,6 +248,7 @@ h2.grid-title-row-1 {
 #photo-img-footer {
     position: relative;
     margin-top: 10px;
+    height: 25px;
 }
 
 #photo-img-buttons-wrap {
@@ -280,7 +292,7 @@ h2.grid-title-row-1 {
 
 #photo-img-wrap {
     background-color: black;
-    height: 50%;
+    height: 100%;
     width: 98%;
     margin-left: auto;
     margin-right: auto;
