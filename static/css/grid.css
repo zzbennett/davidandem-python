@@ -254,6 +254,10 @@ h2.grid-title-row-1 {
     position: absolute;
 }
 
+#photo_file {
+    width: 250px;
+}
+
 #form-wrap {
     position: relative;
     max-width: 350px;
