@@ -42,7 +42,9 @@ $(document).ready(function() {
     var photoImg = $("#photo-img");
 
     var showPhotoAtIndex = function(index) {
-        photoImg.attr({src: photosLinks[index].href});
+        var href = photosLinks[index].href;
+        photoImg.attr("src", href);
+        photoImg.parent("a").attr("href", href);
         photoCounter.text("photo " + (index + 1) + "/" + photosLinks.length);
     };
 
@@ -123,7 +125,7 @@ $(document).ready(function() {
 
         <!-- the actual photo -->
         <div id="photo-img-wrap">
-          <img id="photo-img" />
+          <a href="#" target="_blank"><img id="photo-img" /></a>
         </div>
 
         <!-- various gadgets underneath photo -->
