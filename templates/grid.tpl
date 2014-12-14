@@ -46,6 +46,26 @@ $(document).ready(function() {
         photoCounter.text("photo " + (index + 1) + "/" + photosLinks.length);
     };
 
+    var refreshImages = function(images) {
+        photosLinks = images;
+        showPhotoAtIndex(currentIndex);
+        $("#upload-progress-indicator").hide();
+    };
+
+    $("#upload-photo-form").submit(function(e) {
+        $.ajax({
+            type: 'POST',
+            url: '/photo-upload',
+            data: new FormData(this),
+            success: refreshImages,
+            dataType: 'json',
+            processData: false,
+            contentType: false
+        });
+        $("#upload-progress-indicator").show();
+        e.preventDefault();
+    });
+
     // Setup initial image if there is one.
     if (photosLinks.length > 0) {
         showPhotoAtIndex(0);
@@ -124,11 +144,14 @@ $(document).ready(function() {
           </div>
 
           <!-- upload form -->
-          <form id="upload-photo-form" method="POST" action="/photo-upload" enctype="multipart/form-data">
-            <input type="file" name="photo_file" id="photo_file"
-                   accept="image/bmp, image/gif, image/jpeg, image/tif, image/tiff, image/png" />
-          <input type="submit" value="upload" />
-        </form>
+          <div id="form-wrap">
+            <form id="upload-photo-form" method="POST" action="/photo-upload" enctype="multipart/form-data">
+              <input type="file" name="photo_file" id="photo_file"
+                     accept="image/bmp, image/gif, image/jpeg, image/tif, image/tiff, image/png" />
+              <input type="submit" value="upload" />
+            </form>
+            <img id="upload-progress-indicator" src="/static/images/ajax-loader.gif" />
+          </div>
         </div>
       </div>
     </div> <!-- end photos -->

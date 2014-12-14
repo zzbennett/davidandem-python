@@ -254,6 +254,17 @@ h2.grid-title-row-1 {
     position: absolute;
 }
 
+#form-wrap {
+    position: relative;
+    max-width: 350px;
+}
+
+#upload-progress-indicator {
+    position: absolute;
+    display: none;
+    right: 0px;
+}
+
 #photo-img {
     max-height: 100%;
     max-width: 100%;
