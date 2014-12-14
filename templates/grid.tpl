@@ -186,15 +186,14 @@ $(document).ready(function() {
 
       <div id="date-div">
           <h1>6.12.2015</h1>
+        <img src="/static/images/Flourish.svg"  style="margin-left: calc(50% - 200px);"/>
       </div>
 
       <div id="david" class="medallian-name">
           <h1 id="david-h1">David</h1>
-          <img class="name-underline" id="medallian-underline-david" src="/static/images/Flourish.svg"></img>
       </div>
       <div id="emillie" class="medallian-name">
           <h1 id="emillie-h1">Emillie</h1>
-          <img class="name-underline" id="medallian-underline-emillie" src="/static/images/Flourish.svg"></img>
       </div>
     </div>
   </body>
