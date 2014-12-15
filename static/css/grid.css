@@ -141,7 +141,7 @@ div.col3 {
     height: 75%;
     position: absolute;
     left: 15%;
-    top: calc(50% - 300px);
+    top: 13%;
     z-index: 100;
     opacity: 0.0;
     z-index: 0;
