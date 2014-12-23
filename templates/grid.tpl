@@ -115,7 +115,7 @@ $(document).ready(function() {
 	<p>Since we’ll be tying the knot on Friday, June 12, we recommend that y’all fly in on the 11th, and stay the weekend at the Curtis if you can. Plus, if you all stay there, than you can all party it up together after I (Emillie) have run out of coffee and gone to sleep. The block is reserved from check in on the 11th to check out on the 14th for your convenience.</p>
 
         <h2>Map</h2>
-	<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zKb6YkxKtQGA.kQRHsaBqmIiw" width="640" height="480" style="margin-left: calc(50% - 320px);"></iframe>
+	<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zKb6YkxKtQGA.kQRHsaBqmIiw" class="map"></iframe>
       </div>
     </div>
 

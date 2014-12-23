@@ -147,34 +147,20 @@ div.col3 {
 .filagree-top {
     background-image: url("/static/images/flourish-top.png");
 }
-.filagree-right {
-    background-image: url("/static/images/flourish-right.png");
-}
 .filagree-bottom {
     background-image: url("/static/images/flourish-bottom.png");
 }
-.filagree-left {
-    background-image: url("/static/images/flourish-left.png");
-}
 .filagree-top, .filagree-bottom {
     height: 27px;
+    width: 102%;
+    left: -1%;
     background-size: 100% 27px;
 }
 .filagree-top {
-    top: -20px;
+    top: 2px;
 }
 .filagree-bottom {
-    bottom: -20px;
-}
-.filagree-left, .filagree-right {
-    background-size: 27px 100%;
-    width: 27px;
-}
-.filagree-left {
-    left: -20px;
-}
-.filagree-right {
-    right: -20px;
+    bottom: 2px;
 }
 
 .modal {
@@ -197,9 +183,9 @@ div.col3 {
 
 .modal-body {
     position: absolute;
-    top: 0px;
+    top: 15px;
     width: 98%;
-    height: 98%;
+    height: 90%;
     margin: 1%;
     overflow: auto;
 }
@@ -237,11 +223,9 @@ p.modal-text {
 iframe.map {
     position: relative;
     top: 0%;
-    height: 81%;
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 6%;
+    height: 480px;
+    width: 98%;
+    margin-left: 1%;
 }
 
 .grid-off .grid-title {
