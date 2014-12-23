@@ -95,6 +95,14 @@ $(document).ready(function() {
 
     <!-- travel info -->
     <div id="travel-information" class="modal">
+      <!-- filagree -->
+      <div class="filagree filagree-top"></div>
+      <div class="filagree filagree-right"></div>
+      <div class="filagree filagree-bottom"></div>
+      <div class="filagree filagree-left"></div>
+      <!-- end filagree -->
+
+
       <div class="modal-header">
         <span class="modal-title">Travel Information</span>
         <span class="modal-close"><a href="#">&times;</a></span>
@@ -114,6 +122,14 @@ $(document).ready(function() {
 
     <!-- photos -->
     <div id="photos" class="modal">
+      <!-- filagree -->
+      <div class="filagree filagree-top"></div>
+      <div class="filagree filagree-right"></div>
+      <div class="filagree filagree-bottom"></div>
+      <div class="filagree filagree-left"></div>
+      <!-- end filagree -->
+
+
       <div class="modal-header">
         <span class="modal-title">Photos</span>
         <span class="modal-close"><a href="#">&times;</a></span>
@@ -166,6 +182,16 @@ $(document).ready(function() {
 
     <!-- wedding day -->
     <div id="wedding-day" class="modal">
+      <!-- filagree -->
+      <div class="filagree filagree-top"></div>
+      <div class="filagree filagree-right"></div>
+      <div class="filagree filagree-bottom"></div>
+      <div class="filagree filagree-left"></div>
+      <!-- end filagree -->
+
+
+
+
       <div class="modal-header">
         <span class="modal-title">Wedding Day</span>
         <span class="modal-close"><a href="#">&times;</a></span>
@@ -184,6 +210,15 @@ $(document).ready(function() {
 
     <!-- rsvp -->
     <div id="RSVP" class="modal">
+      <!-- filagree -->
+      <div class="filagree filagree-top"></div>
+      <div class="filagree filagree-right"></div>
+      <div class="filagree filagree-bottom"></div>
+      <div class="filagree filagree-left"></div>
+      <!-- end filagree -->
+
+
+
       <div class="modal-header">
         <span class="modal-title">RSVP</span>
         <span class="modal-close"><a href="#">&times;</a></span>
@@ -198,6 +233,15 @@ $(document).ready(function() {
 
     <!-- registry -->
     <div id="registry" class="modal">
+      <!-- filagree -->
+      <div class="filagree filagree-top"></div>
+      <div class="filagree filagree-right"></div>
+      <div class="filagree filagree-bottom"></div>
+      <div class="filagree filagree-left"></div>
+      <!-- end filagree -->
+
+
+
       <div class="modal-header">
         <span class="modal-title">Registry</span>
         <span class="modal-close"><a href="#">&times;</a></span>
@@ -211,6 +255,15 @@ $(document).ready(function() {
 
     <!-- about -->
     <div id="about" class="modal">
+      <!-- filagree -->
+      <div class="filagree filagree-top"></div>
+      <div class="filagree filagree-right"></div>
+      <div class="filagree filagree-bottom"></div>
+      <div class="filagree filagree-left"></div>
+      <!-- end filagree -->
+
+
+
       <div class="modal-header">
         <span class="modal-title">About</span>
         <span class="modal-close"><a href="#">&times;</a></span>
