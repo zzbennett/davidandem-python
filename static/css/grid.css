@@ -100,6 +100,7 @@ div.col3 {
 #date-div h1 {
     color: #f9f1dc;
     font-size:58px;
+    text-shadow: 3px 1px #796137;
 }
 
 #date-div img {
@@ -131,6 +132,7 @@ div.col3 {
     font-family: 'Zakia';
     font-size: 33px;
     color: #333333;
+    text-shadow: 2px 1px rgb(170, 170, 170);
 }
 .name-underline {
     margin-top: -75px;

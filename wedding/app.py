@@ -47,7 +47,6 @@ def main_page():
     LOG.debug('photo_links = %s' % photos_json)
     return template('grid.tpl', photo_links=photos_json)
 
-
 @route('/photo-upload', method='POST')
 def submit_photo():
     # Could also include title/description here with kwargs.
