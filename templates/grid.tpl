@@ -197,10 +197,10 @@ $(document).ready(function() {
         <span class="modal-close"><a href="#">&times;</a></span>
       </div>
       <div class="modal-body">
-        <h3>Schedule of the day</h3>
+        <h2>Schedule of the day</h2>
         <p>Please check back later for more information about the schedule of events on June 12, 2015. Frankly, Emillie and Dave haven’t figured it out yet. It will probably involve rings or something though. </p>
 
-        <h3>Where stuff is happening</h3>
+        <h2>Where stuff is happening</h2>
 	<p>What we can tell you as of now is that it will definitely be at the <a href="https://www.denverathleticclub.cc/Weddings?ssid=195228">Denver Athletic Club</a>, and there will definitely be both a ceremony and a reception and food. Emillie has been told there should probably be flowers too. Squeamish guest should be aware that there will be some kissing too, so please be prepared to be grossed out. </p>
 
         <img src="/static/images/dac-sundec.jpg"  style="margin-left: calc(50% - 270px);" class="modal-photo" />
