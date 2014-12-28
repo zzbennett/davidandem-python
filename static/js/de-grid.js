@@ -2,30 +2,30 @@ $(document).ready(function () {
     // rows/columns of images.
     var imageGrid = [
         [
+            {on: '/static/images/photos/kiss.jpg',
+             off: '/static/images/photos/modified/kiss sepia.jpg',
+             page: "photos"},
             {on: '/static/images/photos/denver.png',
              off: '/static/images/photos/modified/denver-sepia.png',
              page: "travel-information"},
-            {on: '/static/images/photos/emillie is dipped.jpg',
-             off: '/static/images/photos/modified/emillie is dipped sepia.jpg'},
-            {on: '/static/images/photos/cute and smiling in front of structure.jpg',
-             off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg'},
             {on: '/static/images/photos/pretty-dav.png',
              off: '/static/images/photos/modified/pretty-dav-sepia.png',
-             page: "wedding-day"}
+             page: "wedding-day"},
+            {on: '/static/images/photos/modified/b&w smiling sepia.jpg',
+             off: '/static/images/photos/modified/b&w smiling sepia.jpg'}
         ],
         [
-            {on: '/static/images/photos/b&w smiling.jpg',
-             off: '/static/images/photos/modified/b&w smiling sepia.jpg',
-             page: "about"},
+            {on: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg',
+             off: '/static/images/photos/modified/cute and smiling in front of structure sepia.jpg'},
             {on: '/static/images/photos/Ampersand.png',
              off: '/static/images/photos/modified/Ampersand-sepia.png',
              page: "registry"},
+            {on: '/static/images/photos/emillie is dipped.jpg',
+             off: '/static/images/photos/modified/emillie is dipped sepia.jpg',
+             page: "about"},
             {on: '/static/images/photos/emillie looks blissful.jpg',
              off: '/static/images/photos/modified/emillie looks blissful sepia.jpg',
-             page: "RSVP"},
-            {on: '/static/images/photos/kiss.jpg',
-             off: '/static/images/photos/modified/kiss sepia.jpg',
-             page: "photos"}
+             page: "RSVP"}
         ]
     ];
 
