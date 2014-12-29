@@ -159,4 +159,14 @@ $(document).ready(function () {
 
     $("body").click( closeAllModals );
     $(".modal").click(function(event) { event.stopPropagation(); });
+
+    // some stuff for photos.
+    $("div.photo-nav").hover(
+        function(e) {
+            $(this).stop().animate({'opacity': 1.0}, 200);
+        },
+        function(e) {
+            $(this).stop().animate({'opacity': 0.1}, 200);
+        }
+    );
 });

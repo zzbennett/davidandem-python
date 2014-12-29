@@ -158,21 +158,16 @@ $(document).ready(function() {
         <div id="photo-modal-widgets">
           <!-- the actual photo -->
           <div id="photo-img-wrap">
+            <!-- prev/next buttons -->
+            <div class="photo-nav" id="backward-photo"></div>
+            <div class="photo-nav" id="forward-photo"></div>
+
+            <!-- link to the photo -->
             <a href="#" target="_blank"><img id="photo-img" /></a>
           </div>
 
           <!-- various gadgets underneath photo -->
           <div id="photo-img-footer">
-            <!-- prev/next buttons -->
-            <div id="photo-img-buttons-wrap">
-              <button id="backward-photo">
-                &lt;&lt; prev
-              </button>
-              <button id="forward-photo">
-                next &gt;&gt;
-              </button>
-            </div>
-
             <!-- progress through photos -->
             <div id="photo-counter">
               X/Y
