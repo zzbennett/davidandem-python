@@ -52,20 +52,33 @@ $(document).ready(function() {
         photosLinks = images;
         showPhotoAtIndex(currentIndex);
         $("#upload-progress-indicator").hide();
+
+        // Also clear form and disable submit button.
+        $("#upload-photo-form").clear();
+        $("#upload-submit").prop("disabled", "disabled");
     };
 
+    // Enable submit button if we selected a file.
+    $("#photo_file").change(function(e) {
+        if ($(this).val()) {
+            $("#upload-submit").removeAttr("disabled");
+        }
+    });
+
     $("#upload-photo-form").submit(function(e) {
-        $.ajax({
-            type: 'POST',
-            url: '/photo-upload',
-            data: new FormData(this),
-            success: refreshImages,
-            dataType: 'json',
-            processData: false,
-            contentType: false
-        });
-        $("#upload-progress-indicator").show();
-        e.preventDefault();
+        if (! $("#photo_file").val()) {
+            $.ajax({
+                type: 'POST',
+                url: '/photo-upload',
+                data: new FormData(this),
+                success: refreshImages,
+                dataType: 'json',
+                processData: false,
+                contentType: false
+            });
+            $("#upload-progress-indicator").show();
+            e.preventDefault();
+        }
     });
 
     // Setup initial image if there is one.
@@ -170,7 +183,7 @@ $(document).ready(function() {
               <form id="upload-photo-form" method="POST" action="/photo-upload" enctype="multipart/form-data">
                 <input type="file" name="photo_file" id="photo_file"
                        accept="image/bmp, image/gif, image/jpeg, image/tif, image/tiff, image/png" />
-                       <input type="submit" value="upload" />
+                       <input id="upload-submit" type="submit" value="upload" disabled="disabled" />
               </form>
               <img id="upload-progress-indicator" src="/static/images/ajax-loader.gif" />
             </div>
