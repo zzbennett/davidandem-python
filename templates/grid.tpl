@@ -123,7 +123,7 @@ $(document).ready(function() {
       <div class="modal-body">
         <p class="modal-text">Logistically, it makes almost no sense to get married in Denver. Neither we, nor most of you people even live there! We know that. But Denver is David’s hometown, and is a gorgeous backdrop for our upcoming nuptials. We love the city, the mountains and the people, so why not? </p>
 
-	<p>The <a href="https://www.denverathleticclub.cc/Weddings?ssid=195228">Denver Athletic Club</a>, which is where the ceremony will occur, is located downtown, close to Coors Stadium, 16th Avenue Mall, and loads of restaurants and shops. It’s also only a few blocks away from <a href="http://www.thecurtis.com/contact/">The Cutis</a>, the hotel where we have reserved a block at a discounted rate for all of our lovely out of town guests (i.e. pretty much everyone). The logic behind this choice was based off the fact that the Curtis is hella close to the Denver Athletic Club and also centrally located. We didn’t want anyone to have to drive around, or get lost, or be late (you know who you are). So downtown it is!  To book at the Curtis, please follow this <a href=http://doubletree.hilton.com/en/dt/groups/personalized/D/DENCHDT-LBR-20150611/index.jhtml?WT.mc_id=POG>link</a> or call them at 303-571-0300 and ask to reserve for the Lingnau-Bennett wedding block. </p>
+	<p>The <a href="https://www.denverathleticclub.cc/Weddings?ssid=195228">Denver Athletic Club</a>, which is where the ceremony will occur, is located downtown, close to Coors Stadium, 16th Avenue Mall, and loads of restaurants and shops. It’s also only a few blocks away from <a href="http://www.thecurtis.com/contact/">The Curtis</a>, the hotel where we have reserved a block at a discounted rate for all of our lovely out of town guests (i.e. pretty much everyone). The logic behind this choice was based off the fact that the Curtis is hella close to the Denver Athletic Club and also centrally located. We didn’t want anyone to have to drive around, or get lost, or be late (you know who you are). So downtown it is!  To book at the Curtis, please follow this <a href=http://doubletree.hilton.com/en/dt/groups/personalized/D/DENCHDT-LBR-20150611/index.jhtml?WT.mc_id=POG>link</a> or call them at 303-571-0300 and ask to reserve for the Lingnau-Bennett wedding block. </p>
 
 	<p>Since we’ll be tying the knot on Friday, June 12, we recommend that y’all fly in on the 11th, and stay the weekend at the Curtis if you can. Plus, if you all stay there, than you can all party it up together after I (Emillie) have run out of coffee and gone to sleep. The block is reserved from check in on the 11th to check out on the 14th for your convenience.</p>
 
@@ -234,7 +234,7 @@ $(document).ready(function() {
       <div class="modal-body">
         <p class="modal-text">Hey look at this fancy tech goodness! This is where you can RSVP! Online! Fill out the information and it will be popped into a spreadsheet that tracks who is coming and who is totally missing out. Thank god for Elizabeth Bennett (Fancy Tech Goddess)!</p>
 	<p>You can also RSVP by phone, email, or by text, but not by fax. Faxes are an outdated technology and don’t get Emillie started on faxes or she’ll go on, and on, and on</p>
-      <iframe src="https://docs.google.com/forms/d/1mq0wDmh_B0IH0GyEo9IadiqMR-OojvirPRwqnlPE4Dg/viewform?embedded=true" width="760" height="850" frameborder="0" marginheight="0" marginwidth="0" style="margin-left: calc(50% - 370px);" scrolling="no">Loading...</iframe>
+      <iframe src="https://docs.google.com/forms/d/1mq0wDmh_B0IH0GyEo9IadiqMR-OojvirPRwqnlPE4Dg/viewform?embedded=true" width="760" height="1150" frameborder="0" marginheight="0" marginwidth="0" style="margin-left: calc(50% - 370px);" scrolling="no">Loading...</iframe>
       </div>
     </div>
 
@@ -255,8 +255,8 @@ $(document).ready(function() {
         <span class="modal-close"><a href="#">&times;</a></span>
       </div>
       <div class="modal-body">
-        <p class="modal-text">Please check back later for information on the registry, since as of right now, there isn’t one.</p>
-        <img src="http://dailykitten.com/wp-content/uploads/2007/03/1173796830boris-bela-3.jpg" style="margin-left: calc(50% - 200px)" />
+        <p class="modal-text">David and Emillie have a registry with <a href="http://www.crateandbarrel.com/">Crate & Barrel</a>. You can find their registry <a href="http://www.crateandbarrel.com/gift-registry/emillie-lingnau-and-david-bennett/r5280108">here</a>.</p>
+        <img src="/static/images/crate&barrel.jpg" style="margin-left: calc(50% - 345px); height: 70%; width: 70%"  class="modal-photo" />
       </div>
     </div>
 
