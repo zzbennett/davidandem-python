@@ -256,7 +256,7 @@ $(document).ready(function() {
       </div>
       <div class="modal-body">
         <p class="modal-text">David and Emillie have a registry with <a href="http://www.crateandbarrel.com/">Crate & Barrel</a>. You can find their registry <a href="http://www.crateandbarrel.com/gift-registry/emillie-lingnau-and-david-bennett/r5280108">here</a>.</p>
-        <img src="/static/images/crate&barrel.jpg" style="margin-left: calc(50% - 345px); height: 70%; width: 70%"  class="modal-photo" />
+        <img src="/static/images/crate&barrel.jpg" style="display: block; margin-left: auto; margin-right: auto"  class="modal-photo" />
       </div>
     </div>
 
