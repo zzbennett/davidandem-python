@@ -6,7 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css' />
-    <img src="http://collector01.chipper01.loggly.net/inputs/0cf54fa6-e81b-461f-8b5d-201e9095e22f.gif?source=pixel&data=hello-angela" />
+    <img src="http://collector01.chipper01.loggly.net/inputs/0cf54fa6-e81b-461f-8b5d-201e9095e22f.gif?source=pixel&data=hello-angela&derp=some_var" />
     <link href='/static/fonts/zakia-webfont.ttf' rel='stylesheet' type='text/css' />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     {% block javascript %}
