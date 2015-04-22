@@ -124,9 +124,14 @@ $(document).ready(function() {
       <div class="modal-body">
         <p class="modal-text">Logistically, it makes almost no sense to get married in Denver. Neither we, nor most of you people even live there! We know that. But Denver is David’s hometown, and is a gorgeous backdrop for our upcoming nuptials. We love the city, the mountains and the people, so why not? </p>
 
+	<h2>Lodging</h2>
 	<p>The <a href="https://www.denverathleticclub.cc/Weddings?ssid=195228">Denver Athletic Club</a>, which is where the ceremony will occur, is located downtown, close to Coors Stadium, 16th Avenue Mall, and loads of restaurants and shops. It’s also only a few blocks away from <a href="http://www.thecurtis.com/contact/">The Curtis</a>, the hotel where we have reserved a block at a discounted rate for all of our lovely out of town guests (i.e. pretty much everyone). The logic behind this choice was based off the fact that the Curtis is hella close to the Denver Athletic Club and also centrally located. We didn’t want anyone to have to drive around, or get lost, or be late (you know who you are). So downtown it is!  To book at the Curtis, please follow this <a href=http://doubletree.hilton.com/en/dt/groups/personalized/D/DENCHDT-LBR-20150611/index.jhtml?WT.mc_id=POG>link</a> or call them at 303-571-0300 and ask to reserve for the Lingnau-Bennett wedding block. </p>
 
+	<h2>Flying</h2>
 	<p>Since we’ll be tying the knot on Friday, June 12, we recommend that y’all fly in on the 11th, and stay the weekend at the Curtis if you can. Plus, if you all stay there, than you can all party it up together after I (Emillie) have run out of coffee and gone to sleep. The block is reserved from check in on the 11th to check out on the 14th for your convenience.</p>
+
+	<h2>Transportation</h2>
+	<p>If you should rent a car, then getting to downtown is not difficult at all. If you choose not to rent a car, you may choose to take the RTD SkyRide, which embarks at the DIA Jeppsen Terminal- Level 5/Ground Transportation, and will drop you off at 19th street and Arapahoe, just a couple blocks from the Curtis Hotel for $11. Tickets can be purchased at DIA in the West Terminal, Level 5. Alternatively, cabs are available from the airport and fares begin at $41.00 USD.  </p>
 
         <h2>Map</h2>
 	<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zKb6YkxKtQGA.kQRHsaBqmIiw" class="map"></iframe>
@@ -207,10 +212,18 @@ $(document).ready(function() {
       </div>
       <div class="modal-body">
         <h2>Schedule of the day</h2>
-        <p>Please check back later for more information about the schedule of events on June 12, 2015. Frankly, Emillie and Dave haven’t figured it out yet. It will probably involve rings or something though. </p>
+	<p>4:00 pm - Ceremony! (This is when the Formalities will take place.) To be conducted by Mr. Thomas Powell, who is totally ordained. </p>
+	<p>4:45 pm - Cocktail hour! We’ll have these up on the terrace, so don’t worry about having to find a bar in an unfamiliar town wherein to kill the most awkward length of time ever. Too long for just one drink, too short for a meal or to really do anything, but don’t worry, we have you covered. </p>
+	<p>6:00 pm - Reception! Dinner, Dancing, Decorum—just kidding! Okay maybe a little decorum. All to be hosted in the Denver Athletic Club’s Ballroom, by the bride’s sister Alex Lingnau and a select panel of guests. Be warned: she has the capacity to give you a hernia from laughing and to completely ruin your makeup from crying. </p>
+	<p>10:00 pm - Last Dance. That’s it, we’re hitched, that’s all, go home. Thank you for all your lovely wishes and for the honor of your company on this day. We couldn’t—and wouldn’t—have done it without you.</p>
+	<p>10:30 pm - JUST KIDDING! Let’s all go Bowling, shall we?? Anyone who’s still up for it is welcome in the Denver Athletic Club’s bowling alley. We are hoping to consign the most serious instances of lacking decorum to this part of the evening. Drinks can be purchased downstairs, but rental shoes will be provided.  </p>
 
         <h2>Where stuff is happening</h2>
-	<p>What we can tell you as of now is that it will definitely be at the <a href="https://www.denverathleticclub.cc/Weddings?ssid=195228">Denver Athletic Club</a>, and there will definitely be both a ceremony and a reception and food. Emillie has been told there should probably be flowers too. Squeamish guest should be aware that there will be some kissing too, so please be prepared to be grossed out. </p>
+	<p>Stuff, we can assure you, will definitely be happening all over the place on June 12. Somewhere, a whole flock (herd?) of Monarch Butterflies will be doing stuff as they make an absolutely astounding migration across the globe, A CFL Game will include stuff being done as it disappoints everyone, and the particular stuff David and Emillie will be doing will be happening on the Denver Athletic Club’s rooftop terrace. Stuff will then proceed to happen in the ballroom of the same establishment for a while. After that you may have to go find your own stuff, but we hope you will have enjoyed doing stuff with us.</p>
+
+	<h2><em>Please be advised</em></h2>
+	<p>As it turns out, some of the stuff will involve kissing. Not like gratuitous amounts of snogging, but like one or two moments of relatively chaste lip contact. Maybe more. Please be warned. 
+	There will be flash photography, provided by Ms. Megan Alvarez. She’s very good, and we promise to share the photos she does take, so please, please, put down your cameras during the ceremony and enjoy it. </p>
 
         <img src="/static/images/dac-sundec.jpg"  style="margin-left: calc(50% - 270px);" class="modal-photo" />
       </div>
@@ -256,7 +269,7 @@ $(document).ready(function() {
         <span class="modal-close"><a href="#">&times;</a></span>
       </div>
       <div class="modal-body">
-        <p class="modal-text">David and Emillie have a registry with <a href="http://www.crateandbarrel.com/">Crate & Barrel</a>. You can find their registry <a href="http://www.crateandbarrel.com/gift-registry/emillie-lingnau-and-david-bennett/r5280108">here</a>.</p>
+        <p class="modal-text">David and Emillie have a registry with <a href="http://www.crateandbarrel.com/">Crate & Barrel</a> and <a href="http://www.sears.com/">Sears</a>. You can find their registries  <a href="http://www.crateandbarrel.com/gift-registry/emillie-lingnau-and-david-bennett/r5280108">here</a> and <a href="http://www.sears.com/shc/s/GiftRegistryApp?storeId=10153&catalogId=12605#!/landing/registry/900084703046010101">here</a>.</p>
         <img src="/static/images/crate&barrel.jpg" style="display: block; margin-left: auto; margin-right: auto"  class="modal-photo" />
       </div>
     </div>
