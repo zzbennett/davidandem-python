@@ -55,7 +55,7 @@ $(document).ready(function() {
         $("#upload-progress-indicator").hide();
 
         // Also clear form and disable submit button.
-        $("#upload-photo-form").clear();
+        $("#upload-photo-form").trigger("reset");
         $("#upload-submit").prop("disabled", "disabled");
     };
 
@@ -67,7 +67,7 @@ $(document).ready(function() {
     });
 
     $("#upload-photo-form").submit(function(e) {
-        if (! $("#photo_file").val()) {
+        if ($("#photo_file").val()) {
             $.ajax({
                 type: 'POST',
                 url: '/photo-upload',
@@ -78,8 +78,8 @@ $(document).ready(function() {
                 contentType: false
             });
             $("#upload-progress-indicator").show();
-            e.preventDefault();
         }
+        e.preventDefault();
     });
 
     // Setup initial image if there is one.
